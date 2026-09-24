@@ -1,0 +1,1575 @@
+[
+  {
+    "id": "regicide",
+    "name": "Regicide",
+    "category": "Classic",
+    "description": "Game kartu kooperatif melawan raja jahat menggunakan kartu standar.",
+    "players_min": 1,
+    "players_max": 4,
+    "duration": "20-40 menit",
+    "duration_minutes": 30,
+    "difficulty": "Sedang",
+    "tags": [
+      "kooperatif",
+      "fantasy",
+      "boss battle"
+    ],
+    "style": "Strategis",
+    "about": "Regicide adalah game kooperatif fantasi di mana pemain bekerja sama mengalahkan 12 Jack, Queen, dan King sebagai musuh boss menggunakan kartu angka dan As sebagai senjata serta mantra.",
+    "objective": "Kalahkan seluruh 12 kartu wajah (Jack, Queen, King) sebelum tumpukan kartu tangan pemain habis.",
+    "setup": "Pisahkan kartu wajah sebagai dek musuh urut dari Jack ke King per suit, sisanya jadi dek pemain yang dibagikan sesuai jumlah pemain.",
+    "how_to_play": [
+      "Pemain bergiliran memainkan kartu dari tangan untuk menyerang musuh.",
+      "Nilai kartu menjadi jumlah damage, suit menentukan efek khusus.",
+      "Musuh membalas menyerang sesuai nilai attack-nya kecuali dilemahkan.",
+      "Jika damage tidak cukup membunuh musuh, giliran berpindah ke pemain berikut."
+    ],
+    "special_cards": [
+      "Club: melipatgandakan damage yang diberikan ke musuh.",
+      "Diamond: menambah kartu dari dek ke tangan seluruh pemain.",
+      "Heart: memulihkan kartu dari discard pile ke dek pemain.",
+      "Spade: mengurangi attack musuh untuk sisa giliran."
+    ],
+    "ranking": [],
+    "scoring": "Tidak ada skor individu; permainan menang atau kalah secara tim.",
+    "tips": [
+      "Simpan Heart untuk saat dek hampir habis.",
+      "Kombinasikan kartu bernilai sama untuk damage lebih besar."
+    ],
+    "variations": [
+      "Mode solo dengan aturan tangan lebih besar.",
+      "Varian kompetitif untuk pemain yang ingin saling bersaing skor."
+    ],
+    "quick_guide": [
+      "Susun dek musuh dan dek pemain.",
+      "Bagikan kartu ke tiap pemain.",
+      "Serang musuh bergiliran.",
+      "Gunakan efek suit secara taktis.",
+      "Kalahkan seluruh musuh untuk menang."
+    ]
+  },
+  {
+    "id": "blackjack",
+    "name": "Blackjack",
+    "category": "Casino",
+    "description": "Game kartu melawan dealer, targetkan nilai tangan sedekat mungkin dengan 21.",
+    "players_min": 1,
+    "players_max": 7,
+    "duration": "10-20 menit",
+    "duration_minutes": 15,
+    "difficulty": "Mudah",
+    "tags": [
+      "casino",
+      "dealer",
+      "21"
+    ],
+    "style": "Cepat",
+    "about": "Blackjack, atau 21, adalah game kartu populer di mana pemain berusaha mengalahkan dealer dengan mendekati nilai 21 tanpa melebihinya.",
+    "objective": "Dapatkan total nilai kartu lebih tinggi dari dealer tanpa melebihi 21.",
+    "setup": "Gunakan satu atau beberapa dek standar. Dealer membagikan dua kartu ke tiap pemain dan dua kartu untuk dirinya sendiri.",
+    "how_to_play": [
+      "Kartu angka bernilai sesuai angkanya, kartu wajah bernilai 10, As bernilai 1 atau 11.",
+      "Pemain memilih Hit untuk menambah kartu atau Stand untuk berhenti.",
+      "Jika total melebihi 21, pemain langsung Bust dan kalah.",
+      "Dealer bermain setelah semua pemain selesai, biasanya harus Hit di bawah 17."
+    ],
+    "special_cards": [
+      "As dapat bernilai 1 atau 11 tergantung mana yang menguntungkan.",
+      "Kombinasi As + kartu bernilai 10 disebut Blackjack alami."
+    ],
+    "ranking": [],
+    "scoring": "Blackjack alami membayar lebih tinggi dari kemenangan biasa; tangan yang lebih dekat ke 21 tanpa bust menang.",
+    "tips": [
+      "Stand pada 17 ke atas umumnya aman.",
+      "Hindari Hit berlebihan saat tangan sudah di atas 12."
+    ],
+    "variations": [
+      "Spanish 21 tanpa kartu 10.",
+      "Blackjack Switch dengan dua tangan yang bisa ditukar."
+    ],
+    "quick_guide": [
+      "Bagikan dua kartu ke tiap pemain dan dealer.",
+      "Pemain memilih Hit atau Stand.",
+      "Hindari melebihi 21.",
+      "Dealer menyelesaikan tangannya.",
+      "Bandingkan total untuk menentukan pemenang."
+    ]
+  },
+  {
+    "id": "baccarat",
+    "name": "Baccarat",
+    "category": "Casino",
+    "description": "Game casino sederhana membandingkan tangan Player dan Banker mendekati nilai 9.",
+    "players_min": 1,
+    "players_max": 8,
+    "duration": "10-15 menit",
+    "duration_minutes": 12,
+    "difficulty": "Mudah",
+    "tags": [
+      "casino",
+      "banker",
+      "elegan"
+    ],
+    "style": "Cepat",
+    "about": "Baccarat adalah game casino klasik yang elegan, di mana pemain bertaruh pada tangan Player, Banker, atau Tie yang nilainya paling dekat dengan 9.",
+    "objective": "Menebak tangan mana (Player atau Banker) yang totalnya paling dekat dengan 9.",
+    "setup": "Gunakan beberapa dek kartu dalam shoe. Dua tangan dibagikan: Player dan Banker, masing-masing dua kartu.",
+    "how_to_play": [
+      "Nilai kartu 2-9 sesuai angka, kartu 10 dan wajah bernilai 0, As bernilai 1.",
+      "Jika total dua digit, hanya digit terakhir yang dihitung.",
+      "Aturan kartu ketiga otomatis berlaku berdasarkan total awal.",
+      "Tangan dengan nilai lebih dekat ke 9 menang."
+    ],
+    "special_cards": [
+      "Kartu 10 dan wajah dianggap bernilai 0."
+    ],
+    "ranking": [],
+    "scoring": "Total 8 atau 9 dari dua kartu awal disebut Natural dan otomatis menang kecuali seri.",
+    "tips": [
+      "Taruhan Banker memiliki house edge sedikit lebih rendah.",
+      "Perhatikan komisi pada kemenangan Banker."
+    ],
+    "variations": [
+      "Mini Baccarat dengan meja lebih kecil.",
+      "Chemin de Fer versi Prancis dengan pemain bergilir jadi Banker."
+    ],
+    "quick_guide": [
+      "Pasang taruhan pada Player, Banker, atau Tie.",
+      "Bagikan dua kartu untuk tiap tangan.",
+      "Terapkan aturan kartu ketiga bila perlu.",
+      "Bandingkan total mendekati 9.",
+      "Menangkan taruhan sesuai hasil."
+    ]
+  },
+  {
+    "id": "war",
+    "name": "War",
+    "category": "Family",
+    "description": "Game kartu sederhana untuk anak-anak, adu kartu tertinggi setiap ronde.",
+    "players_min": 2,
+    "players_max": 2,
+    "duration": "10-20 menit",
+    "duration_minutes": 15,
+    "difficulty": "Mudah",
+    "tags": [
+      "anak",
+      "sederhana",
+      "keberuntungan"
+    ],
+    "style": "Santai",
+    "about": "War adalah game kartu paling sederhana, cocok untuk anak-anak, di mana kemenangan murni ditentukan oleh nilai kartu yang dibuka.",
+    "objective": "Kumpulkan seluruh kartu dengan memenangkan setiap pertarungan kartu.",
+    "setup": "Bagikan seluruh dek secara merata ke dua pemain tanpa melihat kartu.",
+    "how_to_play": [
+      "Kedua pemain membuka kartu teratas secara bersamaan.",
+      "Kartu dengan nilai lebih tinggi memenangkan kedua kartu.",
+      "Jika nilai sama terjadi 'War': buka tiga kartu tertutup lalu satu kartu terbuka untuk menentukan pemenang.",
+      "Kartu yang dimenangkan diletakkan di bawah tumpukan pemenang."
+    ],
+    "special_cards": [],
+    "ranking": [
+      "As tertinggi, lalu King, Queen, Jack, hingga angka 2 terendah."
+    ],
+    "scoring": "Pemain yang menguasai seluruh kartu menang.",
+    "tips": [
+      "Kocok ulang tumpukan menang agar urutan acak.",
+      "Gunakan batas waktu agar permainan tidak berlarut."
+    ],
+    "variations": [
+      "War tiga pemain dengan aturan modifikasi.",
+      "Egyptian War yang menambahkan aturan slap."
+    ],
+    "quick_guide": [
+      "Bagi dek jadi dua sama rata.",
+      "Buka kartu teratas bersamaan.",
+      "Nilai tertinggi menang kedua kartu.",
+      "Jika seri, lakukan War.",
+      "Pemain dengan seluruh kartu menang."
+    ]
+  },
+  {
+    "id": "texas_holdem",
+    "name": "Texas Hold'em",
+    "category": "Poker",
+    "description": "Varian poker paling populer dengan dua kartu pribadi dan lima kartu komunitas.",
+    "players_min": 2,
+    "players_max": 9,
+    "duration": "30-60 menit",
+    "duration_minutes": 45,
+    "difficulty": "Sedang",
+    "tags": [
+      "poker",
+      "betting",
+      "turnamen"
+    ],
+    "style": "Strategis",
+    "about": "Texas Hold'em adalah varian poker paling populer di dunia, memadukan kartu pribadi dan kartu komunitas dengan ronde taruhan bertingkat.",
+    "objective": "Bentuk kombinasi kartu lima terbaik atau buat lawan fold untuk memenangkan pot.",
+    "setup": "Setiap pemain mendapat dua kartu tertutup (hole cards). Dealer button dan blind bergilir searah jarum jam.",
+    "how_to_play": [
+      "Ronde taruhan Pre-flop dimulai setelah kartu hole dibagikan.",
+      "Flop membuka tiga kartu komunitas diikuti ronde taruhan.",
+      "Turn membuka kartu keempat, River membuka kartu kelima, masing-masing diikuti taruhan.",
+      "Showdown menentukan pemenang berdasarkan kombinasi lima kartu terbaik."
+    ],
+    "special_cards": [],
+    "ranking": [
+      "Royal Flush",
+      "Straight Flush",
+      "Four of a Kind",
+      "Full House",
+      "Flush",
+      "Straight",
+      "Three of a Kind",
+      "Two Pair",
+      "One Pair",
+      "High Card"
+    ],
+    "scoring": "Pemenang mengambil seluruh pot berdasarkan kombinasi tertinggi atau lawan yang fold.",
+    "tips": [
+      "Perhatikan posisi meja sebelum memutuskan taruhan.",
+      "Jangan terlalu sering bermain kartu lemah."
+    ],
+    "variations": [
+      "No-Limit dengan taruhan bebas.",
+      "Limit Hold'em dengan batas taruhan tetap."
+    ],
+    "quick_guide": [
+      "Bagikan dua kartu hole per pemain.",
+      "Lakukan ronde taruhan Pre-flop.",
+      "Buka Flop, Turn, dan River bertahap.",
+      "Lakukan taruhan tiap tahap.",
+      "Bandingkan tangan terbaik saat Showdown."
+    ]
+  },
+  {
+    "id": "omaha",
+    "name": "Omaha",
+    "category": "Poker",
+    "description": "Varian poker dengan empat kartu hole, wajib pakai tepat dua kartu hole.",
+    "players_min": 2,
+    "players_max": 9,
+    "duration": "30-60 menit",
+    "duration_minutes": 45,
+    "difficulty": "Sedang",
+    "tags": [
+      "poker",
+      "betting",
+      "kombinasi"
+    ],
+    "style": "Strategis",
+    "about": "Omaha mirip Texas Hold'em namun setiap pemain menerima empat kartu hole dan wajib menggunakan tepat dua di antaranya.",
+    "objective": "Bentuk kombinasi lima kartu terbaik menggunakan tepat dua kartu hole dan tiga kartu komunitas.",
+    "setup": "Setiap pemain mendapat empat kartu tertutup, lima kartu komunitas dibuka bertahap seperti Hold'em.",
+    "how_to_play": [
+      "Ronde taruhan berjalan sama seperti Texas Hold'em: Pre-flop, Flop, Turn, River.",
+      "Pemain wajib memakai tepat dua kartu hole, tidak boleh lebih atau kurang.",
+      "Kombinasi dibentuk dari dua kartu hole plus tiga kartu komunitas.",
+      "Showdown menentukan kombinasi terbaik yang sah."
+    ],
+    "special_cards": [],
+    "ranking": [
+      "Royal Flush",
+      "Straight Flush",
+      "Four of a Kind",
+      "Full House",
+      "Flush",
+      "Straight",
+      "Three of a Kind",
+      "Two Pair",
+      "One Pair",
+      "High Card"
+    ],
+    "scoring": "Pemenang mengambil pot berdasarkan kombinasi sah tertinggi.",
+    "tips": [
+      "Empat kartu hole memberi lebih banyak kombinasi, hitung dengan cermat.",
+      "Waspadai kombinasi lawan yang lebih besar karena banyak opsi kartu."
+    ],
+    "variations": [
+      "Omaha Hi-Lo membagi pot untuk tangan tertinggi dan terendah."
+    ],
+    "quick_guide": [
+      "Bagikan empat kartu hole per pemain.",
+      "Jalankan ronde taruhan bertahap.",
+      "Buka kartu komunitas seperti Hold'em.",
+      "Gunakan tepat dua kartu hole.",
+      "Tentukan pemenang saat Showdown."
+    ]
+  },
+  {
+    "id": "five_card_draw",
+    "name": "Five Card Draw",
+    "category": "Poker",
+    "description": "Varian poker klasik di mana pemain bisa menukar kartu untuk memperbaiki tangan.",
+    "players_min": 2,
+    "players_max": 8,
+    "duration": "20-40 menit",
+    "duration_minutes": 30,
+    "difficulty": "Mudah",
+    "tags": [
+      "poker",
+      "klasik",
+      "draw"
+    ],
+    "style": "Santai",
+    "about": "Five Card Draw adalah bentuk poker paling tradisional, populer sejak abad ke-19, dengan mekanisme penukaran kartu yang sederhana.",
+    "objective": "Miliki kombinasi lima kartu terbaik setelah kesempatan menukar kartu.",
+    "setup": "Setiap pemain mendapat lima kartu tertutup di awal.",
+    "how_to_play": [
+      "Ronde taruhan pertama dilakukan setelah kartu dibagikan.",
+      "Pemain dapat menukar hingga tiga kartu (atau empat jika memegang As) dengan kartu baru dari dek.",
+      "Ronde taruhan kedua dilakukan setelah penukaran.",
+      "Showdown menentukan kombinasi terbaik di antara pemain yang bertahan."
+    ],
+    "special_cards": [],
+    "ranking": [
+      "Royal Flush",
+      "Straight Flush",
+      "Four of a Kind",
+      "Full House",
+      "Flush",
+      "Straight",
+      "Three of a Kind",
+      "Two Pair",
+      "One Pair",
+      "High Card"
+    ],
+    "scoring": "Pemenang mengambil pot berdasarkan kombinasi tertinggi.",
+    "tips": [
+      "Jangan menukar terlalu banyak kartu tanpa rencana jelas.",
+      "Pertahankan pair atau lebih sebagai dasar tangan."
+    ],
+    "variations": [
+      "Varian Jackpots yang mensyaratkan pair Jack untuk membuka taruhan."
+    ],
+    "quick_guide": [
+      "Bagikan lima kartu per pemain.",
+      "Lakukan ronde taruhan awal.",
+      "Tukar kartu yang tidak diinginkan.",
+      "Lakukan ronde taruhan kedua.",
+      "Bandingkan kombinasi saat Showdown."
+    ]
+  },
+  {
+    "id": "seven_card_stud",
+    "name": "Seven Card Stud",
+    "category": "Poker",
+    "description": "Varian poker dengan tujuh kartu bertahap, tanpa kartu komunitas.",
+    "players_min": 2,
+    "players_max": 8,
+    "duration": "30-60 menit",
+    "duration_minutes": 45,
+    "difficulty": "Sulit",
+    "tags": [
+      "poker",
+      "stud",
+      "klasik"
+    ],
+    "style": "Strategis",
+    "about": "Seven Card Stud adalah varian poker populer sebelum era Texas Hold'em, di mana setiap pemain menerima kartu terbuka dan tertutup secara bertahap.",
+    "objective": "Bentuk kombinasi lima kartu terbaik dari total tujuh kartu yang diterima.",
+    "setup": "Setiap pemain menerima dua kartu tertutup dan satu kartu terbuka di awal.",
+    "how_to_play": [
+      "Kartu tambahan dibagikan satu per satu, empat kartu terbuka dan satu kartu tertutup terakhir.",
+      "Ronde taruhan terjadi setelah setiap kartu terbuka dibagikan.",
+      "Pemain dengan kartu terbuka tertinggi biasanya memulai taruhan.",
+      "Showdown menentukan kombinasi lima kartu terbaik dari tujuh kartu."
+    ],
+    "special_cards": [],
+    "ranking": [
+      "Royal Flush",
+      "Straight Flush",
+      "Four of a Kind",
+      "Full House",
+      "Flush",
+      "Straight",
+      "Three of a Kind",
+      "Two Pair",
+      "One Pair",
+      "High Card"
+    ],
+    "scoring": "Pemenang mengambil pot berdasarkan kombinasi lima kartu terbaik.",
+    "tips": [
+      "Perhatikan kartu terbuka lawan untuk membaca kemungkinan tangan.",
+      "Ingat kartu yang sudah terbuang untuk menghitung peluang."
+    ],
+    "variations": [
+      "Seven Card Stud Hi-Lo membagi pot tinggi dan rendah."
+    ],
+    "quick_guide": [
+      "Bagikan dua kartu tertutup dan satu terbuka.",
+      "Lakukan taruhan tiap kartu terbuka baru.",
+      "Bagikan kartu tertutup terakhir.",
+      "Lakukan taruhan akhir.",
+      "Bandingkan tujuh kartu saat Showdown."
+    ]
+  },
+  {
+    "id": "hearts",
+    "name": "Hearts",
+    "category": "Trick-Taking",
+    "description": "Game trick-taking di mana pemain menghindari kartu Hati dan Queen of Spades.",
+    "players_min": 4,
+    "players_max": 4,
+    "duration": "30-45 menit",
+    "duration_minutes": 35,
+    "difficulty": "Sedang",
+    "tags": [
+      "trick-taking",
+      "strategi",
+      "menghindar"
+    ],
+    "style": "Strategis",
+    "about": "Hearts adalah game trick-taking di mana tujuan utamanya justru menghindari mengambil trik berisi kartu berbahaya, bukan memenangkan trik sebanyak mungkin.",
+    "objective": "Kumpulkan poin sesedikit mungkin dengan menghindari kartu Hati dan Queen of Spades.",
+    "setup": "Bagikan seluruh 52 kartu merata ke empat pemain, masing-masing 13 kartu.",
+    "how_to_play": [
+      "Sebelum ronde dimulai, pemain saling mengoper tiga kartu ke pemain lain.",
+      "Pemain dengan 2 of Clubs memulai trik pertama.",
+      "Pemain wajib mengikuti suit yang dimainkan bila memungkinkan.",
+      "Pemenang trik adalah yang memainkan kartu tertinggi sesuai suit yang dipimpin."
+    ],
+    "special_cards": [
+      "Setiap kartu Hati bernilai 1 poin buruk.",
+      "Queen of Spades bernilai 13 poin buruk."
+    ],
+    "ranking": [],
+    "scoring": "Pemain dengan poin terendah setelah mencapai batas skor (biasanya 100) menang; 'Shooting the Moon' membalik skor jika berhasil ambil semua kartu berbahaya.",
+    "tips": [
+      "Buang kartu tinggi berbahaya di awal permainan.",
+      "Waspadai peluang lawan melakukan Shoot the Moon."
+    ],
+    "variations": [
+      "Omnibus Hearts menambahkan bonus untuk 10 of Diamonds."
+    ],
+    "quick_guide": [
+      "Bagikan 13 kartu per pemain.",
+      "Oper tiga kartu sebelum bermain.",
+      "Mulai dengan pemegang 2 of Clubs.",
+      "Ikuti suit dan hindari kartu berbahaya.",
+      "Hitung skor terendah sebagai pemenang."
+    ]
+  },
+  {
+    "id": "spades",
+    "name": "Spades",
+    "category": "Trick-Taking",
+    "description": "Game trick-taking berpasangan dengan bidding jumlah trik yang akan diambil.",
+    "players_min": 4,
+    "players_max": 4,
+    "duration": "30-45 menit",
+    "duration_minutes": 35,
+    "difficulty": "Sedang",
+    "tags": [
+      "trick-taking",
+      "tim",
+      "bidding"
+    ],
+    "style": "Strategis",
+    "about": "Spades adalah game trick-taking berpasangan yang populer, di mana tim menebak (bid) jumlah trik yang bisa mereka menangkan sebelum bermain.",
+    "objective": "Capai atau lampaui jumlah bid trik yang dijanjikan bersama pasangan.",
+    "setup": "Empat pemain dibagi menjadi dua tim berpasangan, masing-masing menerima 13 kartu.",
+    "how_to_play": [
+      "Setiap pemain melakukan bid jumlah trik yang yakin bisa dimenangkan.",
+      "Spade selalu menjadi suit trump sepanjang permainan.",
+      "Pemain wajib mengikuti suit yang dipimpin bila memungkinkan.",
+      "Trik dimenangkan oleh kartu Spade tertinggi atau kartu suit tertinggi bila tidak ada Spade."
+    ],
+    "special_cards": [
+      "Seluruh kartu Spade berfungsi sebagai trump."
+    ],
+    "ranking": [],
+    "scoring": "Tim mendapat 10 poin per trik sesuai bid; kelebihan trik (bags) dapat mengurangi skor bila menumpuk.",
+    "tips": [
+      "Hitung kekuatan Spade di tangan sebelum bid.",
+      "Koordinasikan sinyal sederhana dengan pasangan."
+    ],
+    "variations": [
+      "Solo Spades tanpa berpasangan.",
+      "Whiz atau Mirror dengan aturan bid khusus."
+    ],
+    "quick_guide": [
+      "Bagikan 13 kartu per pemain.",
+      "Lakukan bid jumlah trik.",
+      "Mainkan trik dengan Spade sebagai trump.",
+      "Ikuti suit yang dipimpin.",
+      "Hitung skor tim berdasarkan bid."
+    ]
+  },
+  {
+    "id": "bridge",
+    "name": "Bridge",
+    "category": "Trick-Taking",
+    "description": "Game trick-taking klasik dan kompetitif dengan sistem bidding kompleks.",
+    "players_min": 4,
+    "players_max": 4,
+    "duration": "45-90 menit",
+    "duration_minutes": 60,
+    "difficulty": "Sulit",
+    "tags": [
+      "trick-taking",
+      "tim",
+      "kompetitif"
+    ],
+    "style": "Strategis",
+    "about": "Contract Bridge adalah salah satu game kartu paling kompleks dan kompetitif di dunia, dimainkan oleh dua pasangan dengan sistem bidding dan komunikasi kontrak.",
+    "objective": "Penuhi kontrak jumlah trik yang disepakati melalui proses bidding sebelum permainan.",
+    "setup": "Empat pemain berpasangan silang duduk, masing-masing menerima 13 kartu.",
+    "how_to_play": [
+      "Fase bidding menentukan kontrak (jumlah trik dan suit trump) melalui tawaran bertingkat.",
+      "Setelah bidding selesai, dummy membuka kartunya untuk dilihat semua pemain.",
+      "Declarer memainkan kartu dari tangan sendiri dan tangan dummy.",
+      "Trik dimenangkan sesuai suit trump atau suit tertinggi yang dipimpin."
+    ],
+    "special_cards": [
+      "Suit trump yang disepakati saat bidding mengalahkan suit lain."
+    ],
+    "ranking": [],
+    "scoring": "Skor dihitung berdasarkan pemenuhan kontrak, bonus overtrick, dan penalti undertrick.",
+    "tips": [
+      "Pelajari sistem bidding standar sebelum bermain kompetitif.",
+      "Perhatikan sinyal dari kartu yang dibuang pasangan."
+    ],
+    "variations": [
+      "Rubber Bridge dengan skor per rubber.",
+      "Duplicate Bridge untuk turnamen."
+    ],
+    "quick_guide": [
+      "Bagikan 13 kartu per pemain.",
+      "Lakukan proses bidding kontrak.",
+      "Buka kartu dummy.",
+      "Mainkan trik sesuai kontrak.",
+      "Hitung skor berdasarkan pemenuhan kontrak."
+    ]
+  },
+  {
+    "id": "whist",
+    "name": "Whist",
+    "category": "Trick-Taking",
+    "description": "Game trick-taking klasik pendahulu Bridge, sederhana dan berpasangan.",
+    "players_min": 4,
+    "players_max": 4,
+    "duration": "20-40 menit",
+    "duration_minutes": 30,
+    "difficulty": "Sedang",
+    "tags": [
+      "trick-taking",
+      "tim",
+      "klasik"
+    ],
+    "style": "Strategis",
+    "about": "Whist adalah game trick-taking klasik yang menjadi cikal bakal Bridge dan Spades, dimainkan berpasangan tanpa proses bidding.",
+    "objective": "Menangkan trik sebanyak mungkin bersama pasangan untuk mencapai skor target.",
+    "setup": "Seluruh 52 kartu dibagikan habis ke empat pemain yang berpasangan silang.",
+    "how_to_play": [
+      "Kartu terakhir yang dibagikan menentukan suit trump untuk ronde tersebut.",
+      "Pemain wajib mengikuti suit yang dipimpin bila memungkinkan.",
+      "Trik dimenangkan oleh kartu trump tertinggi atau kartu suit tertinggi.",
+      "Pemenang trik memimpin trik berikutnya."
+    ],
+    "special_cards": [
+      "Suit trump ditentukan dari kartu terakhir yang dibagikan."
+    ],
+    "ranking": [],
+    "scoring": "Tim yang menangkan lebih dari enam trik mendapat poin sesuai kelebihan trik tersebut.",
+    "tips": [
+      "Perhatikan kartu trump yang sudah keluar.",
+      "Mainkan kartu tinggi di awal saat aman."
+    ],
+    "variations": [
+      "Knockout Whist dengan babak eliminasi.",
+      "Bid Whist yang menambahkan sistem bidding."
+    ],
+    "quick_guide": [
+      "Bagikan seluruh kartu ke empat pemain.",
+      "Tentukan trump dari kartu terakhir.",
+      "Ikuti suit yang dipimpin.",
+      "Menangkan trik dengan kartu tertinggi.",
+      "Hitung total trik tim di akhir ronde."
+    ]
+  },
+  {
+    "id": "euchre",
+    "name": "Euchre",
+    "category": "Trick-Taking",
+    "description": "Game trick-taking cepat menggunakan dek pendek 24 kartu.",
+    "players_min": 4,
+    "players_max": 4,
+    "duration": "20-30 menit",
+    "duration_minutes": 25,
+    "difficulty": "Sedang",
+    "tags": [
+      "trick-taking",
+      "dek pendek",
+      "tim"
+    ],
+    "style": "Cepat",
+    "about": "Euchre adalah game trick-taking cepat yang populer di Amerika Utara, menggunakan dek pendek berisi 9 hingga As saja.",
+    "objective": "Bersama pasangan, menangkan mayoritas dari lima trik dalam satu ronde.",
+    "setup": "Gunakan 24 kartu (9, 10, J, Q, K, A tiap suit) dan bagikan lima kartu ke tiap pemain.",
+    "how_to_play": [
+      "Kartu teratas sisa dek dibalik untuk menentukan calon trump.",
+      "Pemain bergiliran memilih menerima trump tersebut atau melewatkannya.",
+      "Jack suit trump (Right Bower) menjadi kartu tertinggi, Jack suit sewarna (Left Bower) kedua tertinggi.",
+      "Trik dimainkan mengikuti suit dengan trump mengalahkan suit lain."
+    ],
+    "special_cards": [
+      "Right Bower: Jack suit trump, kartu tertinggi.",
+      "Left Bower: Jack suit sewarna dengan trump, kartu kedua tertinggi."
+    ],
+    "ranking": [],
+    "scoring": "Tim yang memanggil trump mendapat poin jika menang tiga trik atau lebih; euchre (gagal) memberi poin ke tim lawan.",
+    "tips": [
+      "Right dan Left Bower sangat kuat, rencanakan penggunaannya.",
+      "Jangan memanggil trump dengan tangan lemah."
+    ],
+    "variations": [
+      "Euchre tiga pemain (Cutthroat).",
+      "Stick the Dealer yang memaksa dealer memilih trump."
+    ],
+    "quick_guide": [
+      "Bagikan lima kartu per pemain dari dek 24 kartu.",
+      "Tentukan trump dari kartu yang dibalik.",
+      "Ikuti suit dan mainkan trump strategis.",
+      "Menangkan tiga dari lima trik.",
+      "Hitung skor tim tiap ronde."
+    ]
+  },
+  {
+    "id": "oh_hell",
+    "name": "Oh Hell",
+    "category": "Trick-Taking",
+    "description": "Game trick-taking dengan bidding tepat, salah tebak berarti tidak dapat poin.",
+    "players_min": 3,
+    "players_max": 7,
+    "duration": "30-45 menit",
+    "duration_minutes": 35,
+    "difficulty": "Sedang",
+    "tags": [
+      "trick-taking",
+      "bidding",
+      "presisi"
+    ],
+    "style": "Strategis",
+    "about": "Oh Hell (juga dikenal sebagai Oh Well atau Blackout) adalah game trick-taking di mana pemain harus menebak dengan tepat jumlah trik yang akan dimenangkan.",
+    "objective": "Tebak jumlah trik secara akurat dan penuhi tebakan tersebut untuk mendapat poin.",
+    "setup": "Jumlah kartu yang dibagikan berubah tiap ronde, biasanya naik lalu turun.",
+    "how_to_play": [
+      "Kartu teratas sisa dek dibuka untuk menentukan suit trump ronde tersebut.",
+      "Setiap pemain mengumumkan bid jumlah trik secara berurutan.",
+      "Pemain wajib mengikuti suit yang dipimpin bila memungkinkan.",
+      "Trik dimenangkan oleh trump tertinggi atau kartu suit tertinggi."
+    ],
+    "special_cards": [
+      "Suit trump ditentukan tiap ronde dari kartu yang dibuka."
+    ],
+    "ranking": [],
+    "scoring": "Bid yang tepat memberi bonus poin; meleset bid berarti poin nol atau minus tergantung varian.",
+    "tips": [
+      "Hitung ulang bid berdasarkan kartu trump yang dipegang.",
+      "Total bid semua pemain sering tidak boleh sama dengan jumlah trik tersedia."
+    ],
+    "variations": [
+      "Varian tanpa trump untuk ronde tertentu.",
+      "Varian dengan penalti minus untuk bid meleset."
+    ],
+    "quick_guide": [
+      "Bagikan jumlah kartu sesuai ronde.",
+      "Tentukan trump dari kartu terbuka.",
+      "Umumkan bid tiap pemain.",
+      "Mainkan trik sesuai suit dan trump.",
+      "Hitung poin berdasarkan ketepatan bid."
+    ]
+  },
+  {
+    "id": "rummy",
+    "name": "Rummy",
+    "category": "Rummy",
+    "description": "Game membentuk set dan run kartu untuk mengosongkan tangan lebih dulu.",
+    "players_min": 2,
+    "players_max": 6,
+    "duration": "20-40 menit",
+    "duration_minutes": 30,
+    "difficulty": "Mudah",
+    "tags": [
+      "rummy",
+      "set",
+      "klasik"
+    ],
+    "style": "Santai",
+    "about": "Rummy adalah keluarga game kartu klasik di mana pemain menyusun kombinasi kartu berupa set atau run untuk mengosongkan tangan mereka.",
+    "objective": "Jadi pemain pertama yang berhasil menyusun seluruh kartu di tangan menjadi kombinasi sah.",
+    "setup": "Bagikan 7-10 kartu per pemain tergantung jumlah pemain, sisanya jadi stock pile.",
+    "how_to_play": [
+      "Pemain mengambil satu kartu dari stock atau discard pile tiap giliran.",
+      "Susun kartu menjadi set (kartu sama nilai beda suit) atau run (urutan sama suit).",
+      "Buang satu kartu ke discard pile untuk mengakhiri giliran.",
+      "Permainan berakhir saat satu pemain berhasil mengosongkan tangannya."
+    ],
+    "special_cards": [],
+    "ranking": [],
+    "scoring": "Pemain lain menghitung poin dari kartu tersisa di tangan; total poin terendah dari beberapa ronde menang.",
+    "tips": [
+      "Simpan kartu fleksibel yang bisa masuk beberapa kombinasi.",
+      "Perhatikan kartu yang dibuang lawan untuk membaca strategi mereka."
+    ],
+    "variations": [
+      "Indian Rummy dengan aturan joker wajib.",
+      "500 Rummy dengan sistem skor kumulatif."
+    ],
+    "quick_guide": [
+      "Bagikan 7-10 kartu per pemain.",
+      "Ambil kartu dari stock atau discard.",
+      "Susun set atau run yang sah.",
+      "Buang satu kartu tiap giliran.",
+      "Menang saat tangan kosong lebih dulu."
+    ]
+  },
+  {
+    "id": "gin_rummy",
+    "name": "Gin Rummy",
+    "category": "Rummy",
+    "description": "Varian Rummy dua pemain dengan konsep 'knocking' saat deadwood rendah.",
+    "players_min": 2,
+    "players_max": 2,
+    "duration": "20-30 menit",
+    "duration_minutes": 25,
+    "difficulty": "Sedang",
+    "tags": [
+      "rummy",
+      "dua pemain",
+      "strategi"
+    ],
+    "style": "Strategis",
+    "about": "Gin Rummy adalah varian Rummy dua pemain yang lebih strategis, terkenal dengan konsep 'knock' untuk mengakhiri ronde lebih awal.",
+    "objective": "Kurangi nilai deadwood (kartu yang tidak membentuk kombinasi) serendah mungkin lalu knock.",
+    "setup": "Bagikan 10 kartu ke tiap pemain, sisanya jadi stock pile dengan satu kartu dibuka sebagai discard awal.",
+    "how_to_play": [
+      "Pemain mengambil kartu dari stock atau discard pile tiap giliran.",
+      "Susun kartu menjadi set atau run untuk mengurangi deadwood.",
+      "Jika deadwood 10 poin atau kurang, pemain bisa knock untuk mengakhiri ronde.",
+      "Lawan dapat 'lay off' kartu deadwood-nya ke kombinasi milik penjambak knock."
+    ],
+    "special_cards": [],
+    "ranking": [],
+    "scoring": "Selisih deadwood menentukan poin; 'Gin' (deadwood nol) memberi bonus tambahan.",
+    "tips": [
+      "Jangan buang kartu yang mungkin dibutuhkan lawan.",
+      "Knock secepatnya saat deadwood sudah sangat rendah."
+    ],
+    "variations": [
+      "Oklahoma Gin dengan batas knock berubah tiap ronde.",
+      "Hollywood Gin dengan skor tiga game paralel."
+    ],
+    "quick_guide": [
+      "Bagikan 10 kartu per pemain.",
+      "Ambil dan buang kartu tiap giliran.",
+      "Susun set atau run.",
+      "Knock saat deadwood cukup rendah.",
+      "Hitung selisih poin deadwood."
+    ]
+  },
+  {
+    "id": "canasta",
+    "name": "Canasta",
+    "category": "Rummy",
+    "description": "Varian Rummy berpasangan dengan target menyusun 'canasta' tujuh kartu.",
+    "players_min": 2,
+    "players_max": 6,
+    "duration": "45-90 menit",
+    "duration_minutes": 60,
+    "difficulty": "Sulit",
+    "tags": [
+      "rummy",
+      "tim",
+      "canasta"
+    ],
+    "style": "Strategis",
+    "about": "Canasta adalah varian Rummy berpasangan asal Amerika Selatan yang berkembang menjadi salah satu game kartu paling populer pada masanya.",
+    "objective": "Bersama pasangan, susun sebanyak mungkin canasta (tumpukan tujuh kartu sejenis) untuk skor tinggi.",
+    "setup": "Gunakan dua dek kartu plus joker, bagikan 11-15 kartu tergantung jumlah pemain.",
+    "how_to_play": [
+      "Pemain mengambil kartu dari stock atau seluruh discard pile jika memenuhi syarat.",
+      "Susun meld minimal tiga kartu sejenis, bisa ditambah hingga menjadi canasta tujuh kartu.",
+      "Kartu liar (joker dan 2) dapat digunakan sebagai pengganti dalam meld tertentu.",
+      "Ronde berakhir saat satu pemain mengosongkan tangan dengan minimal satu canasta selesai."
+    ],
+    "special_cards": [
+      "Joker dan kartu 2 berfungsi sebagai kartu liar.",
+      "Kartu 3 merah memberi bonus, kartu 3 hitam bersifat defensif."
+    ],
+    "ranking": [],
+    "scoring": "Canasta alami (tanpa kartu liar) memberi poin lebih tinggi dari canasta campuran; total skor dihitung tiap ronde.",
+    "tips": [
+      "Prioritaskan menyelesaikan satu canasta penuh sebelum membuka banyak meld baru.",
+      "Jaga kartu liar untuk melengkapi canasta besar."
+    ],
+    "variations": [
+      "Hand and Foot dengan dua set tangan per pemain.",
+      "Samba Canasta dengan run sebagai meld tambahan."
+    ],
+    "quick_guide": [
+      "Bagikan kartu sesuai jumlah pemain.",
+      "Ambil dari stock atau discard pile.",
+      "Susun meld menuju canasta tujuh kartu.",
+      "Selesaikan minimal satu canasta.",
+      "Hitung skor akhir tim."
+    ]
+  },
+  {
+    "id": "indian_rummy",
+    "name": "Indian Rummy",
+    "category": "Rummy",
+    "description": "Varian Rummy 13 kartu dengan wajib satu pure sequence tanpa joker.",
+    "players_min": 2,
+    "players_max": 6,
+    "duration": "20-30 menit",
+    "duration_minutes": 25,
+    "difficulty": "Sedang",
+    "tags": [
+      "rummy",
+      "joker",
+      "sequence"
+    ],
+    "style": "Strategis",
+    "about": "Indian Rummy adalah varian Rummy 13 kartu yang sangat populer di India, mensyaratkan minimal satu pure sequence untuk deklarasi sah.",
+    "objective": "Susun seluruh 13 kartu menjadi sequence dan set yang sah lalu deklarasikan lebih dulu.",
+    "setup": "Bagikan 13 kartu per pemain, satu kartu dibuka sebagai joker acak.",
+    "how_to_play": [
+      "Pemain mengambil satu kartu dari stock atau discard pile tiap giliran.",
+      "Wajib membentuk minimal satu pure sequence (urutan sama suit tanpa joker).",
+      "Kartu joker dapat menggantikan kartu apa pun kecuali pada pure sequence.",
+      "Deklarasi dilakukan saat seluruh 13 kartu tersusun sah."
+    ],
+    "special_cards": [
+      "Kartu joker yang ditentukan acak tiap ronde menggantikan kartu apapun."
+    ],
+    "ranking": [],
+    "scoring": "Deklarasi tanpa pure sequence dianggap tidak sah dan mendapat penalti penuh; kartu tersisa dihitung sebagai poin.",
+    "tips": [
+      "Selesaikan pure sequence secepat mungkin sebagai prioritas.",
+      "Buang kartu tinggi yang tidak berguna lebih awal."
+    ],
+    "variations": [
+      "Deals Rummy dengan jumlah ronde tetap.",
+      "Pool Rummy dengan batas poin eliminasi."
+    ],
+    "quick_guide": [
+      "Bagikan 13 kartu per pemain.",
+      "Tentukan kartu joker.",
+      "Susun pure sequence lebih dulu.",
+      "Lengkapi sequence dan set lain.",
+      "Deklarasikan saat seluruh kartu tersusun."
+    ]
+  },
+  {
+    "id": "crazy_eights",
+    "name": "Crazy Eights",
+    "category": "Party",
+    "description": "Game membuang kartu sesuai suit atau angka, kartu 8 bersifat liar.",
+    "players_min": 2,
+    "players_max": 7,
+    "duration": "10-20 menit",
+    "duration_minutes": 15,
+    "difficulty": "Mudah",
+    "tags": [
+      "party",
+      "membuang kartu",
+      "keluarga"
+    ],
+    "style": "Santai",
+    "about": "Crazy Eights adalah game kartu membuang yang menyenangkan untuk keluarga, dengan kartu angka 8 yang bisa mengganti suit permainan.",
+    "objective": "Jadi pemain pertama yang berhasil membuang seluruh kartu di tangan.",
+    "setup": "Bagikan 5-7 kartu per pemain, sisanya jadi stock pile dengan satu kartu dibuka sebagai awal.",
+    "how_to_play": [
+      "Pemain harus membuang kartu sesuai suit atau angka kartu teratas discard pile.",
+      "Kartu 8 dapat dimainkan kapan saja dan mengubah suit sesuai keinginan pemain.",
+      "Jika tidak punya kartu yang cocok, pemain mengambil kartu dari stock.",
+      "Permainan berlanjut hingga satu pemain menghabiskan kartunya."
+    ],
+    "special_cards": [
+      "Kartu 8: liar, bisa dimainkan kapan saja dan mengubah suit."
+    ],
+    "ranking": [],
+    "scoring": "Kartu tersisa di tangan pemain lain dihitung sebagai poin bagi pemenang ronde.",
+    "tips": [
+      "Simpan kartu 8 untuk situasi darurat.",
+      "Perhatikan suit yang sering diubah lawan."
+    ],
+    "variations": [
+      "Mempersulit dengan kartu Skip dan Draw Two seperti Uno."
+    ],
+    "quick_guide": [
+      "Bagikan 5-7 kartu per pemain.",
+      "Buka satu kartu awal di discard pile.",
+      "Mainkan kartu sesuai suit atau angka.",
+      "Gunakan kartu 8 untuk mengubah suit.",
+      "Menang saat tangan kosong lebih dulu."
+    ]
+  },
+  {
+    "id": "president",
+    "name": "President",
+    "category": "Party",
+    "description": "Game membuang kartu kompetitif dengan hierarki sosial pemenang dan pecundang.",
+    "players_min": 3,
+    "players_max": 8,
+    "duration": "15-30 menit",
+    "duration_minutes": 20,
+    "difficulty": "Sedang",
+    "tags": [
+      "party",
+      "hierarki",
+      "kompetitif"
+    ],
+    "style": "Cepat",
+    "about": "President (juga dikenal sebagai Scum atau Daifugo) adalah game kartu membuang yang penuh strategi sosial, dengan sistem hierarki pemain tiap ronde.",
+    "objective": "Jadi pemain pertama yang menghabiskan seluruh kartu untuk menjadi President ronde berikutnya.",
+    "setup": "Bagikan seluruh dek merata ke semua pemain.",
+    "how_to_play": [
+      "Pemain pertama memainkan kartu atau kombinasi kartu apa saja untuk memulai.",
+      "Pemain berikutnya harus memainkan kartu bernilai sama atau lebih tinggi dengan jumlah kartu sama.",
+      "Pemain yang tidak bisa atau tidak mau bermain harus pass.",
+      "Ronde berakhir saat semua pass kecuali satu pemain, tumpukan dibuang dan pemain itu memimpin lagi."
+    ],
+    "special_cards": [
+      "Kartu 2 sering dianggap kartu terkuat.",
+      "Kombinasi empat kartu sama (bom) bisa mengalahkan kartu tinggi."
+    ],
+    "ranking": [],
+    "scoring": "Urutan pemain menghabiskan kartu menentukan status: President, Vice President, hingga Scum.",
+    "tips": [
+      "Buang kartu rendah lebih dulu saat memungkinkan.",
+      "Simpan kombinasi kuat untuk momen kritis."
+    ],
+    "variations": [
+      "Aturan tukar kartu antara President dan Scum di ronde berikutnya.",
+      "Aturan revolusi yang membalik urutan kekuatan kartu."
+    ],
+    "quick_guide": [
+      "Bagikan seluruh kartu ke pemain.",
+      "Mulai dengan kartu atau kombinasi bebas.",
+      "Naikkan nilai kartu tiap giliran.",
+      "Pass jika tidak bisa melanjutkan.",
+      "Pemain pertama habis kartu jadi President."
+    ]
+  },
+  {
+    "id": "mau_mau",
+    "name": "Mau-Mau",
+    "category": "Party",
+    "description": "Game membuang kartu populer di Eropa mirip Crazy Eights dengan aturan tambahan.",
+    "players_min": 2,
+    "players_max": 6,
+    "duration": "15-25 menit",
+    "duration_minutes": 20,
+    "difficulty": "Mudah",
+    "tags": [
+      "party",
+      "membuang kartu",
+      "eropa"
+    ],
+    "style": "Santai",
+    "about": "Mau-Mau adalah game kartu populer di Jerman dan Eropa Tengah, mirip dengan Crazy Eights namun memiliki kartu aksi tambahan yang lebih dinamis.",
+    "objective": "Jadi pemain pertama yang berhasil membuang seluruh kartu di tangan.",
+    "setup": "Bagikan 5-7 kartu per pemain, sisanya jadi stock pile dengan satu kartu dibuka sebagai awal.",
+    "how_to_play": [
+      "Pemain membuang kartu sesuai suit atau angka kartu teratas.",
+      "Kartu 7 memaksa pemain berikutnya mengambil dua kartu kecuali punya kartu 7 lain.",
+      "Kartu 8 melewati giliran pemain berikutnya.",
+      "Kartu Jack bersifat liar dan mengubah suit permainan."
+    ],
+    "special_cards": [
+      "Kartu 7: memaksa lawan mengambil dua kartu.",
+      "Kartu 8: melewati giliran lawan.",
+      "Jack: liar, mengubah suit."
+    ],
+    "ranking": [],
+    "scoring": "Kartu tersisa di tangan pemain lain dihitung sebagai poin bagi pemenang.",
+    "tips": [
+      "Simpan kartu 7 sebagai pertahanan dari serangan lawan.",
+      "Gunakan Jack di saat kritis untuk mengubah arah permainan."
+    ],
+    "variations": [
+      "Penambahan aturan 'Mau' wajib diucapkan saat kartu tersisa satu."
+    ],
+    "quick_guide": [
+      "Bagikan 5-7 kartu per pemain.",
+      "Mainkan kartu sesuai suit atau angka.",
+      "Gunakan kartu aksi 7, 8, dan Jack.",
+      "Ucapkan 'Mau' saat kartu tersisa satu.",
+      "Menang saat tangan kosong lebih dulu."
+    ]
+  },
+  {
+    "id": "klondike",
+    "name": "Klondike (Solitaire)",
+    "category": "Solitaire",
+    "description": "Solitaire klasik paling terkenal, susun kartu ke foundation berdasarkan suit.",
+    "players_min": 1,
+    "players_max": 1,
+    "duration": "10-20 menit",
+    "duration_minutes": 15,
+    "difficulty": "Mudah",
+    "tags": [
+      "solitaire",
+      "single player",
+      "klasik"
+    ],
+    "style": "Santai",
+    "about": "Klondike adalah bentuk Solitaire paling terkenal di dunia, sering disebut sebagai 'Solitaire' saja karena kepopulerannya.",
+    "objective": "Pindahkan seluruh kartu ke empat foundation pile berurutan dari As hingga King per suit.",
+    "setup": "Susun tableau tujuh kolom dengan jumlah kartu bertambah, kartu teratas tiap kolom terbuka, sisanya jadi stock pile.",
+    "how_to_play": [
+      "Susun kartu di tableau secara turun dan berselang warna (merah-hitam).",
+      "Pindahkan As ke foundation begitu terbuka, lalu lanjutkan urutan menaik per suit.",
+      "Ambil kartu dari stock pile saat tidak ada langkah di tableau.",
+      "Permainan menang saat seluruh kartu tersusun rapi di foundation."
+    ],
+    "special_cards": [],
+    "ranking": [],
+    "scoring": "Skor dihitung dari jumlah kartu berhasil dipindah ke foundation, waktu, dan jumlah langkah.",
+    "tips": [
+      "Buka kartu tertutup di tableau sesegera mungkin.",
+      "Jangan buru-buru memindah kartu ke foundation bila masih dibutuhkan di tableau."
+    ],
+    "variations": [
+      "Klondike Draw 1 dan Draw 3 yang mengatur jumlah kartu diambil dari stock.",
+      "Vegas Scoring dengan sistem taruhan skor."
+    ],
+    "quick_guide": [
+      "Susun tableau tujuh kolom.",
+      "Pindahkan As ke foundation.",
+      "Susun tableau turun berselang warna.",
+      "Ambil kartu dari stock saat buntu.",
+      "Selesaikan seluruh foundation untuk menang."
+    ]
+  },
+  {
+    "id": "spider",
+    "name": "Spider (Solitaire)",
+    "category": "Solitaire",
+    "description": "Solitaire dua dek dengan tujuan menyusun urutan lengkap satu suit.",
+    "players_min": 1,
+    "players_max": 1,
+    "duration": "15-30 menit",
+    "duration_minutes": 20,
+    "difficulty": "Sulit",
+    "tags": [
+      "solitaire",
+      "dua dek",
+      "tantangan"
+    ],
+    "style": "Santai",
+    "about": "Spider Solitaire menggunakan dua dek kartu penuh dan dikenal sebagai salah satu varian Solitaire paling menantang.",
+    "objective": "Susun urutan K hingga As dalam satu suit yang sama untuk menghapusnya dari tableau.",
+    "setup": "Susun tableau 10 kolom dari dua dek kartu, sebagian besar tertutup kecuali kartu teratas.",
+    "how_to_play": [
+      "Pindahkan kartu secara menurun tanpa memandang suit, meski urutan satu suit lebih mudah dipindah bersamaan.",
+      "Urutan lengkap satu suit dari King ke As otomatis terhapus dari tableau.",
+      "Ambil sepuluh kartu baru dari stock saat tableau buntu.",
+      "Permainan menang saat seluruh kartu berhasil dihapus dari tableau."
+    ],
+    "special_cards": [],
+    "ranking": [],
+    "scoring": "Skor dihitung dari jumlah langkah dan kecepatan menyelesaikan seluruh tumpukan.",
+    "tips": [
+      "Prioritaskan membuka kartu tertutup di kolom terpanjang.",
+      "Jaga agar tidak menumpuk kartu campur suit terlalu banyak."
+    ],
+    "variations": [
+      "Spider satu suit untuk pemula.",
+      "Spider empat suit untuk level ahli."
+    ],
+    "quick_guide": [
+      "Susun tableau 10 kolom dari dua dek.",
+      "Pindahkan kartu menurun antar kolom.",
+      "Susun urutan lengkap satu suit.",
+      "Hapus urutan lengkap dari tableau.",
+      "Selesaikan seluruh kartu untuk menang."
+    ]
+  },
+  {
+    "id": "freecell",
+    "name": "FreeCell",
+    "category": "Solitaire",
+    "description": "Solitaire dengan sel bebas untuk menyimpan kartu sementara, hampir selalu bisa dimenangkan.",
+    "players_min": 1,
+    "players_max": 1,
+    "duration": "10-20 menit",
+    "duration_minutes": 15,
+    "difficulty": "Sedang",
+    "tags": [
+      "solitaire",
+      "puzzle",
+      "strategi"
+    ],
+    "style": "Santai",
+    "about": "FreeCell adalah varian Solitaire berbasis strategi penuh tanpa keberuntungan acak, karena seluruh kartu terbuka sejak awal.",
+    "objective": "Pindahkan seluruh kartu ke foundation pile berurutan dari As hingga King per suit.",
+    "setup": "Susun tableau delapan kolom dengan seluruh kartu terbuka, sediakan empat free cell kosong.",
+    "how_to_play": [
+      "Pindahkan kartu di tableau secara menurun dan berselang warna.",
+      "Gunakan free cell untuk menyimpan sementara satu kartu apa saja.",
+      "Pindahkan kartu ke foundation begitu urutannya memungkinkan.",
+      "Rencanakan langkah karena seluruh kartu terlihat sejak awal."
+    ],
+    "special_cards": [],
+    "ranking": [],
+    "scoring": "Skor dihitung dari jumlah langkah dan penggunaan free cell seefisien mungkin.",
+    "tips": [
+      "Jangan mengisi seluruh free cell sekaligus tanpa rencana.",
+      "Cari kombinasi langkah yang membebaskan banyak kartu sekaligus."
+    ],
+    "variations": [
+      "FreeCell dengan dua sel bebas untuk tingkat kesulitan lebih tinggi."
+    ],
+    "quick_guide": [
+      "Susun tableau delapan kolom terbuka.",
+      "Gunakan free cell untuk kartu sementara.",
+      "Susun tableau turun berselang warna.",
+      "Pindahkan kartu ke foundation.",
+      "Selesaikan seluruh foundation untuk menang."
+    ]
+  },
+  {
+    "id": "pyramid",
+    "name": "Pyramid (Solitaire)",
+    "category": "Solitaire",
+    "description": "Solitaire dengan kartu tersusun piramida, pasangkan kartu berjumlah 13.",
+    "players_min": 1,
+    "players_max": 1,
+    "duration": "10-15 menit",
+    "duration_minutes": 12,
+    "difficulty": "Sedang",
+    "tags": [
+      "solitaire",
+      "puzzle",
+      "pasangan"
+    ],
+    "style": "Santai",
+    "about": "Pyramid Solitaire menyusun kartu dalam bentuk piramida dan mengharuskan pemain memasangkan kartu yang jumlahnya 13.",
+    "objective": "Hapus seluruh kartu piramida dengan memasangkan kartu terbuka yang totalnya 13.",
+    "setup": "Susun 28 kartu membentuk piramida tujuh baris, sisanya jadi stock pile.",
+    "how_to_play": [
+      "Hanya kartu yang tidak tertutup kartu lain di bawahnya yang bisa dipasangkan.",
+      "Pasangkan dua kartu terbuka yang jumlah nilainya 13, King dihapus sendirian karena bernilai 13.",
+      "Ambil kartu dari stock pile jika tidak ada pasangan tersedia di piramida.",
+      "Permainan menang saat seluruh kartu piramida berhasil dihapus."
+    ],
+    "special_cards": [
+      "King bernilai 13 dan bisa dihapus sendirian tanpa pasangan.",
+      "As selalu bernilai 1."
+    ],
+    "ranking": [],
+    "scoring": "Skor dihitung dari jumlah kartu piramida yang berhasil dihapus.",
+    "tips": [
+      "Prioritaskan kartu yang membuka banyak kartu baru di baris bawah.",
+      "Rencanakan pasangan sebelum menarik kartu baru dari stock."
+    ],
+    "variations": [
+      "Varian dengan batas jumlah putaran stock pile."
+    ],
+    "quick_guide": [
+      "Susun 28 kartu bentuk piramida.",
+      "Cari kartu terbuka berjumlah 13.",
+      "Pasangkan dan hapus kartu tersebut.",
+      "Ambil kartu baru dari stock bila buntu.",
+      "Hapus seluruh piramida untuk menang."
+    ]
+  },
+  {
+    "id": "golf",
+    "name": "Golf (Solitaire)",
+    "category": "Solitaire",
+    "description": "Solitaire dengan target membuang kartu berurutan naik atau turun tanpa suit.",
+    "players_min": 1,
+    "players_max": 1,
+    "duration": "10-15 menit",
+    "duration_minutes": 12,
+    "difficulty": "Mudah",
+    "tags": [
+      "solitaire",
+      "sederhana",
+      "santai"
+    ],
+    "style": "Santai",
+    "about": "Golf Solitaire adalah game santai dengan aturan sederhana, dinamakan seperti golf karena skor lebih rendah lebih baik.",
+    "objective": "Buang sebanyak mungkin kartu tableau ke discard pile mengikuti urutan naik atau turun.",
+    "setup": "Susun tableau tujuh kolom dengan lima kartu terbuka tiap kolom, satu kartu dibuka sebagai discard awal.",
+    "how_to_play": [
+      "Pindahkan kartu teratas tableau ke discard pile jika nilainya satu tingkat lebih tinggi atau rendah.",
+      "Suit tidak berpengaruh, hanya urutan angka yang penting.",
+      "Ambil kartu baru dari stock pile saat tableau buntu.",
+      "Permainan menang jika seluruh tableau berhasil dikosongkan."
+    ],
+    "special_cards": [],
+    "ranking": [],
+    "scoring": "Skor dihitung dari jumlah kartu tableau yang berhasil dibuang, makin sedikit tersisa makin baik.",
+    "tips": [
+      "King tidak memiliki kartu berikutnya, rencanakan penempatannya.",
+      "Prioritaskan membuka kartu yang menghalangi kolom lain."
+    ],
+    "variations": [
+      "Varian dengan urutan melingkar dari King kembali ke As."
+    ],
+    "quick_guide": [
+      "Susun tableau tujuh kolom terbuka.",
+      "Buang kartu berurutan naik atau turun.",
+      "Ambil kartu baru saat buntu.",
+      "Lanjutkan hingga tableau kosong.",
+      "Hitung sisa kartu sebagai skor."
+    ]
+  },
+  {
+    "id": "yukon",
+    "name": "Yukon (Solitaire)",
+    "category": "Solitaire",
+    "description": "Solitaire mirip Klondike tanpa stock pile, seluruh kartu tableau terbuka sejak awal.",
+    "players_min": 1,
+    "players_max": 1,
+    "duration": "15-25 menit",
+    "duration_minutes": 20,
+    "difficulty": "Sulit",
+    "tags": [
+      "solitaire",
+      "tantangan",
+      "strategi"
+    ],
+    "style": "Santai",
+    "about": "Yukon adalah varian Solitaire yang lebih menantang dari Klondike karena tidak ada stock pile, seluruh kartu tableau terlihat sejak awal.",
+    "objective": "Pindahkan seluruh kartu ke foundation pile berurutan dari As hingga King per suit.",
+    "setup": "Susun tableau tujuh kolom dengan sebagian besar kartu terbuka sejak awal, tanpa stock pile tersisa.",
+    "how_to_play": [
+      "Pindahkan kelompok kartu (bukan hanya satu) di tableau meski urutannya tidak berselang warna sempurna.",
+      "Susun tableau turun dan berselang warna untuk memudahkan pemindahan ke foundation.",
+      "Pindahkan kartu ke foundation begitu urutannya memungkinkan.",
+      "Permainan menang saat seluruh kartu tersusun di foundation."
+    ],
+    "special_cards": [],
+    "ranking": [],
+    "scoring": "Skor dihitung dari jumlah langkah dan kartu berhasil dipindah ke foundation.",
+    "tips": [
+      "Rencanakan pemindahan kelompok kartu besar dengan cermat.",
+      "Fokus membuka kartu tertutup di kolom terpanjang lebih dulu."
+    ],
+    "variations": [
+      "Varian Russian Solitaire dengan aturan pemindahan lebih ketat."
+    ],
+    "quick_guide": [
+      "Susun tableau tujuh kolom terbuka.",
+      "Pindahkan kelompok kartu antar kolom.",
+      "Susun turun berselang warna.",
+      "Pindahkan kartu ke foundation.",
+      "Selesaikan seluruh foundation untuk menang."
+    ]
+  },
+  {
+    "id": "memory_match",
+    "name": "Memory Match",
+    "category": "Family",
+    "description": "Game mengingat posisi kartu berpasangan yang tertutup di atas meja.",
+    "players_min": 1,
+    "players_max": 6,
+    "duration": "10-20 menit",
+    "duration_minutes": 15,
+    "difficulty": "Mudah",
+    "tags": [
+      "memori",
+      "anak",
+      "keluarga"
+    ],
+    "style": "Santai",
+    "about": "Memory Match adalah game klasik untuk melatih daya ingat, cocok dimainkan sendiri maupun bersama keluarga.",
+    "objective": "Kumpulkan pasangan kartu terbanyak dengan mengingat posisi kartu yang sudah dibuka.",
+    "setup": "Susun seluruh kartu tertutup secara acak dalam grid rapi di atas meja.",
+    "how_to_play": [
+      "Pemain membuka dua kartu secara bergiliran untuk mencari pasangan.",
+      "Jika kedua kartu cocok, pemain mengambil pasangan tersebut dan bermain lagi.",
+      "Jika tidak cocok, kartu ditutup kembali dan giliran berpindah ke pemain berikutnya.",
+      "Permainan berakhir saat seluruh kartu berhasil dipasangkan."
+    ],
+    "special_cards": [],
+    "ranking": [],
+    "scoring": "Pemain dengan pasangan kartu terbanyak di akhir permainan menang.",
+    "tips": [
+      "Ingat posisi kartu yang sudah pernah dibuka lawan.",
+      "Fokus pada area grid yang belum banyak terbuka."
+    ],
+    "variations": [
+      "Versi kecepatan dengan batas waktu tiap giliran."
+    ],
+    "quick_guide": [
+      "Susun kartu tertutup dalam grid.",
+      "Buka dua kartu tiap giliran.",
+      "Ambil pasangan yang cocok.",
+      "Tutup kembali bila tidak cocok.",
+      "Hitung pasangan terbanyak di akhir."
+    ]
+  },
+  {
+    "id": "concentration",
+    "name": "Concentration",
+    "category": "Family",
+    "description": "Varian klasik Memory Match dengan fokus penuh pada posisi kartu tersembunyi.",
+    "players_min": 1,
+    "players_max": 8,
+    "duration": "10-20 menit",
+    "duration_minutes": 15,
+    "difficulty": "Mudah",
+    "tags": [
+      "memori",
+      "konsentrasi",
+      "keluarga"
+    ],
+    "style": "Santai",
+    "about": "Concentration adalah nama lain sekaligus varian klasik dari Memory Match yang menekankan konsentrasi penuh saat mengingat posisi kartu.",
+    "objective": "Kumpulkan pasangan kartu terbanyak melalui daya ingat dan konsentrasi.",
+    "setup": "Susun seluruh kartu tertutup dalam grid rapi, bisa menggunakan satu atau dua dek tergantung jumlah pemain.",
+    "how_to_play": [
+      "Setiap pemain membuka dua kartu secara bergiliran.",
+      "Kartu yang cocok diambil oleh pemain dan memberi giliran tambahan.",
+      "Kartu yang tidak cocok ditutup kembali di posisi semula.",
+      "Permainan selesai saat seluruh kartu di grid sudah dipasangkan."
+    ],
+    "special_cards": [],
+    "ranking": [],
+    "scoring": "Pemenang ditentukan dari jumlah pasangan kartu terbanyak.",
+    "tips": [
+      "Buat pola mental grid untuk mempermudah mengingat posisi.",
+      "Perhatikan giliran lawan karena mereka juga membuka informasi baru."
+    ],
+    "variations": [
+      "Versi tim di mana pasangan saling membantu mengingat posisi."
+    ],
+    "quick_guide": [
+      "Susun kartu tertutup dalam grid.",
+      "Buka dua kartu tiap giliran.",
+      "Ambil pasangan yang cocok.",
+      "Lanjutkan giliran bila berhasil.",
+      "Hitung pasangan terbanyak sebagai pemenang."
+    ]
+  },
+  {
+    "id": "spoons",
+    "name": "Spoons",
+    "category": "Party",
+    "description": "Game party cepat mengumpulkan empat kartu sama sambil berebut sendok.",
+    "players_min": 3,
+    "players_max": 8,
+    "duration": "10-15 menit",
+    "duration_minutes": 12,
+    "difficulty": "Mudah",
+    "tags": [
+      "party",
+      "reaksi cepat",
+      "seru"
+    ],
+    "style": "Cepat",
+    "about": "Spoons adalah game party yang penuh tawa dan refleks cepat, menggabungkan permainan kartu dengan aksi berebut sendok.",
+    "objective": "Kumpulkan empat kartu bernilai sama lebih dulu lalu ambil sendok sebelum kehabisan.",
+    "setup": "Letakkan sendok di tengah meja berjumlah satu kurang dari jumlah pemain, tiap pemain menerima empat kartu.",
+    "how_to_play": [
+      "Setiap pemain mengambil satu kartu dan membuang satu kartu secara terus-menerus dan cepat.",
+      "Tujuannya adalah mengumpulkan empat kartu dengan nilai yang sama.",
+      "Begitu ada pemain mendapat empat kartu sama, ia diam-diam mengambil sendok.",
+      "Pemain lain harus cepat menyadari dan ikut mengambil sendok sebelum kehabisan."
+    ],
+    "special_cards": [],
+    "ranking": [],
+    "scoring": "Pemain yang tidak kebagian sendok kalah di ronde tersebut dan tersingkir bertahap.",
+    "tips": [
+      "Perhatikan gerak-gerik pemain lain, bukan hanya kartu sendiri.",
+      "Jangan terlalu jelas menunjukkan sudah memiliki empat kartu sama."
+    ],
+    "variations": [
+      "Versi tanpa sendok menggunakan benda lain sebagai penanda."
+    ],
+    "quick_guide": [
+      "Siapkan sendok satu kurang dari jumlah pemain.",
+      "Bagikan empat kartu per pemain.",
+      "Ambil dan buang kartu secara cepat.",
+      "Ambil sendok saat dapat empat kartu sama.",
+      "Pemain tanpa sendok tersingkir."
+    ]
+  },
+  {
+    "id": "kemps",
+    "name": "Kemps",
+    "category": "Party",
+    "description": "Game tim dengan sinyal rahasia untuk menandakan empat kartu sejenis.",
+    "players_min": 4,
+    "players_max": 8,
+    "duration": "15-25 menit",
+    "duration_minutes": 20,
+    "difficulty": "Sedang",
+    "tags": [
+      "party",
+      "tim",
+      "sinyal"
+    ],
+    "style": "Cepat",
+    "about": "Kemps adalah game kartu tim yang unik karena mengandalkan sinyal rahasia antar pasangan tanpa berbicara.",
+    "objective": "Bersama pasangan, jadi tim pertama yang mengumpulkan empat kartu sama dan berhasil memberi sinyal 'Kemps'.",
+    "setup": "Bagi pemain menjadi pasangan yang duduk berhadapan, masing-masing menerima empat kartu.",
+    "how_to_play": [
+      "Setiap pemain menukar satu kartu dengan pemain lain di tim berbeda secara bersamaan.",
+      "Tujuannya adalah mengumpulkan empat kartu bernilai sama secepat mungkin.",
+      "Saat berhasil, pemain memberi sinyal rahasia ke pasangannya tanpa berbicara.",
+      "Pasangan yang menyadari sinyal berteriak 'Kemps' untuk menang ronde tersebut."
+    ],
+    "special_cards": [],
+    "ranking": [],
+    "scoring": "Tim yang berhasil berteriak Kemps dengan benar memenangkan ronde.",
+    "tips": [
+      "Sepakati sinyal sederhana dan tidak mencolok dengan pasangan.",
+      "Perhatikan pasangan lawan untuk mendeteksi sinyal mereka."
+    ],
+    "variations": [
+      "Varian dengan penalti jika salah teriak Kemps."
+    ],
+    "quick_guide": [
+      "Bagi pemain menjadi pasangan berhadapan.",
+      "Bagikan empat kartu per pemain.",
+      "Tukar kartu secara bersamaan tiap ronde.",
+      "Beri sinyal rahasia saat dapat empat sama.",
+      "Pasangan berteriak Kemps untuk menang."
+    ]
+  },
+  {
+    "id": "egyptian_ratscrew",
+    "name": "Egyptian Ratscrew",
+    "category": "Party",
+    "description": "Game refleks cepat menepuk tumpukan kartu saat pola tertentu muncul.",
+    "players_min": 2,
+    "players_max": 8,
+    "duration": "10-20 menit",
+    "duration_minutes": 15,
+    "difficulty": "Sedang",
+    "tags": [
+      "party",
+      "refleks",
+      "seru"
+    ],
+    "style": "Cepat",
+    "about": "Egyptian Ratscrew adalah game kartu cepat dan energik yang menuntut refleks tinggi untuk menepuk tumpukan kartu di momen tepat.",
+    "objective": "Kumpulkan seluruh kartu dengan menepuk tumpukan saat pola tertentu muncul.",
+    "setup": "Bagikan seluruh dek merata ke semua pemain tanpa melihat kartu.",
+    "how_to_play": [
+      "Pemain bergiliran menumpuk kartu dari tangan ke tengah meja secara terbuka.",
+      "Kartu wajah dan As memicu aturan khusus yang mengubah giliran menepuk.",
+      "Pemain menepuk tumpukan saat muncul pola seperti kartu kembar atau sandwich.",
+      "Pemain yang menepuk paling cepat dan benar mengambil seluruh tumpukan."
+    ],
+    "special_cards": [
+      "As: memicu giliran menumpuk empat kartu tambahan.",
+      "King: memicu tiga kartu tambahan.",
+      "Queen: dua kartu tambahan.",
+      "Jack: satu kartu tambahan."
+    ],
+    "ranking": [],
+    "scoring": "Pemain yang menguasai seluruh kartu di akhir permainan menang.",
+    "tips": [
+      "Fokus pada pola dua kartu kembar berurutan atau sandwich.",
+      "Jaga kuku tetap pendek demi keamanan bermain."
+    ],
+    "variations": [
+      "Aturan penalti kartu bagi yang menepuk salah."
+    ],
+    "quick_guide": [
+      "Bagi seluruh kartu ke pemain.",
+      "Tumpuk kartu secara bergiliran.",
+      "Terapkan aturan kartu wajah dan As.",
+      "Tepuk tumpukan saat pola muncul.",
+      "Kumpulkan seluruh kartu untuk menang."
+    ]
+  },
+  {
+    "id": "old_maid",
+    "name": "Old Maid",
+    "category": "Family",
+    "description": "Game keluarga sederhana menghindari memegang kartu 'Old Maid' tunggal.",
+    "players_min": 2,
+    "players_max": 8,
+    "duration": "10-15 menit",
+    "duration_minutes": 12,
+    "difficulty": "Mudah",
+    "tags": [
+      "keluarga",
+      "anak",
+      "sederhana"
+    ],
+    "style": "Santai",
+    "about": "Old Maid adalah game kartu klasik untuk anak-anak, sederhana dan menyenangkan, sering menjadi pengenalan pertama pada permainan kartu.",
+    "objective": "Buang seluruh pasangan kartu dan hindari menjadi orang terakhir yang memegang kartu Old Maid.",
+    "setup": "Buang satu Queen dari dek sehingga tersisa satu Queen tunggal, bagikan seluruh kartu ke pemain.",
+    "how_to_play": [
+      "Pemain memeriksa tangan dan membuang pasangan kartu bernilai sama.",
+      "Secara bergiliran, pemain mengambil satu kartu acak dari tangan pemain di sebelahnya.",
+      "Jika mendapat pasangan baru, buang pasangan tersebut.",
+      "Permainan berlanjut hingga hanya tersisa satu kartu Queen tunggal di satu pemain."
+    ],
+    "special_cards": [
+      "Queen tunggal (Old Maid): kartu yang harus dihindari hingga akhir."
+    ],
+    "ranking": [],
+    "scoring": "Pemain yang memegang Old Maid di akhir permainan dianggap kalah.",
+    "tips": [
+      "Susun kartu serapi mungkin agar lawan sulit menebak posisi Old Maid.",
+      "Perhatikan ekspresi lawan saat mengambil kartu."
+    ],
+    "variations": [
+      "Versi bertema dengan kartu karakter khusus menggantikan Queen."
+    ],
+    "quick_guide": [
+      "Buang satu Queen dari dek.",
+      "Bagikan seluruh kartu ke pemain.",
+      "Buang pasangan kartu yang cocok.",
+      "Ambil kartu acak dari pemain sebelah.",
+      "Pemain tanpa Old Maid di akhir menang."
+    ]
+  },
+  {
+    "id": "go_fish",
+    "name": "Go Fish",
+    "category": "Family",
+    "description": "Game keluarga meminta kartu ke pemain lain untuk membentuk set empat kartu.",
+    "players_min": 2,
+    "players_max": 6,
+    "duration": "10-20 menit",
+    "duration_minutes": 15,
+    "difficulty": "Mudah",
+    "tags": [
+      "keluarga",
+      "anak",
+      "klasik"
+    ],
+    "style": "Santai",
+    "about": "Go Fish adalah game kartu ramah anak yang sangat populer, mengajarkan konsep bertanya dan strategi sederhana.",
+    "objective": "Kumpulkan sebanyak mungkin set empat kartu bernilai sama.",
+    "setup": "Bagikan 5-7 kartu per pemain, sisanya diletakkan tertutup sebagai 'kolam' di tengah.",
+    "how_to_play": [
+      "Pemain bergiliran meminta kartu bernilai tertentu ke pemain lain yang dipilih.",
+      "Jika pemain yang diminta punya kartu tersebut, ia wajib memberikannya.",
+      "Jika tidak punya, pemain yang bertanya harus 'Go Fish' mengambil kartu dari kolam.",
+      "Set empat kartu sama diletakkan terbuka di depan pemain sebagai poin."
+    ],
+    "special_cards": [],
+    "ranking": [],
+    "scoring": "Pemain dengan jumlah set kartu terbanyak di akhir permainan menang.",
+    "tips": [
+      "Ingat kartu yang pernah diminta lawan untuk menebak tangan mereka.",
+      "Jangan lupa untuk 'Go Fish' dengan sopan saat kalah bertanya."
+    ],
+    "variations": [
+      "Versi dengan set hanya butuh tiga kartu untuk pemain lebih muda."
+    ],
+    "quick_guide": [
+      "Bagikan 5-7 kartu per pemain.",
+      "Minta kartu ke pemain lain.",
+      "Ambil dari kolam bila tidak diberi.",
+      "Kumpulkan set empat kartu sama.",
+      "Set terbanyak di akhir menang."
+    ]
+  }
+]

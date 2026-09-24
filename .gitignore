@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+
+# Data pengguna (favorit & baru dilihat) - jangan ikut ter-commit
+kartupedia_data.json
+
+# Buildozer / Android build
+.buildozer/
+bin/
+*.apk
+*.aab
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,146 @@
+#:import AppColors kartupedia.core.theme.AppColors
+#:import AppSpacing kartupedia.core.theme.AppSpacing
+#:import AppRadius kartupedia.core.theme.AppRadius
+#:import AppTypography kartupedia.core.theme.AppTypography
+#:import APP_NAME kartupedia.config.APP_NAME
+#:import APP_TAGLINE kartupedia.config.APP_TAGLINE
+
+
+<AboutScreen>:
+    BoxLayout:
+        orientation: "vertical"
+        canvas.before:
+            Color:
+                rgba: AppColors.BG
+            RoundedRectangle:
+                pos: self.pos
+                size: self.size
+
+        BoxLayout:
+            size_hint_y: None
+            height: dp(64)
+            padding: AppSpacing.LG, AppSpacing.MD, AppSpacing.LG, 0
+
+            Label:
+                text: "Tentang"
+                color: AppColors.TEXT
+                font_size: AppTypography.HEADING
+                bold: True
+                halign: "left"
+                valign: "middle"
+                text_size: self.size
+
+        ScrollView:
+            size_hint: 1, 1
+
+            BoxLayout:
+                orientation: "vertical"
+                size_hint_y: None
+                height: self.minimum_height
+                padding: AppSpacing.LG, AppSpacing.MD, AppSpacing.LG, AppSpacing.XXL
+                spacing: AppSpacing.LG
+
+                BoxLayout:
+                    orientation: "vertical"
+                    size_hint_y: None
+                    height: dp(120)
+                    spacing: AppSpacing.XS
+
+                    BoxLayout:
+                        size_hint_y: None
+                        height: dp(72)
+
+                        BoxLayout:
+                        BoxLayout:
+                            size_hint: None, None
+                            size: dp(72), dp(72)
+                            pos_hint: {"center_x": 0.5}
+                            canvas.before:
+                                Color:
+                                    rgba: AppColors.PRIMARY
+                                RoundedRectangle:
+                                    pos: self.pos
+                                    size: self.size
+                                    radius: [dp(36)]
+                            Label:
+                                text: "K"
+                                color: AppColors.WHITE
+                                font_size: sp(30)
+                                bold: True
+                        BoxLayout:
+
+                    Label:
+                        text: APP_NAME
+                        color: AppColors.TEXT
+                        font_size: AppTypography.HEADING
+                        bold: True
+                        size_hint_y: None
+                        height: dp(30)
+
+                Label:
+                    text: APP_TAGLINE
+                    color: AppColors.GOLD_LIGHT
+                    font_size: AppTypography.BODY
+                    halign: "center"
+                    size_hint_y: None
+                    height: dp(24)
+                    text_size: self.width, None
+
+                Label:
+                    text: root.desc_text
+                    color: AppColors.TEXT_SECONDARY
+                    font_size: AppTypography.BODY
+                    halign: "left"
+                    valign: "top"
+                    size_hint_y: None
+                    text_size: self.width, None
+                    height: self.texture_size[1]
+
+                BoxLayout:
+                    orientation: "vertical"
+                    size_hint_y: None
+                    height: dp(90)
+                    padding: AppSpacing.MD
+                    spacing: dp(6)
+                    canvas.before:
+                        Color:
+                            rgba: AppColors.SURFACE
+                        RoundedRectangle:
+                            pos: self.pos
+                            size: self.size
+                            radius: [AppRadius.MD]
+                        Color:
+                            rgba: AppColors.BORDER
+                        Line:
+                            rounded_rectangle: (self.x, self.y, self.width, self.height, AppRadius.MD)
+                            width: 1
+
+                    Label:
+                        text: root.version_text
+                        color: AppColors.TEXT
+                        font_size: AppTypography.CAPTION
+                        halign: "left"
+                        valign: "middle"
+                        size_hint_y: None
+                        height: dp(20)
+                        text_size: self.size
+
+                    Label:
+                        text: "Status: Panduan Permainan Kartu Offline"
+                        color: AppColors.TEXT_SECONDARY
+                        font_size: AppTypography.CAPTION
+                        halign: "left"
+                        valign: "middle"
+                        size_hint_y: None
+                        height: dp(20)
+                        text_size: self.size
+
+                    Label:
+                        text: root.total_games_text
+                        color: AppColors.TEXT_SECONDARY
+                        font_size: AppTypography.CAPTION
+                        halign: "left"
+                        valign: "middle"
+                        size_hint_y: None
+                        height: dp(20)
+                        text_size: self.size

@@ -1,0 +1,17 @@
+# Hanya STRUKTUR layout yang dipindah ke sini. Warna aktif/nonaktif tombol
+# tetap diatur lewat Python (BottomNavigation._make_button / set_active) karena
+# VectorIcon menggambar warnanya langsung di canvas (lihat widgets/icons.py),
+# bukan lewat Kivy Property yang bisa diikat reaktif dari KV.
+
+<BottomNavigation>:
+    orientation: "horizontal"
+    size_hint_y: None
+    height: dp(76)
+    padding: dp(10), dp(8), dp(10), dp(8)
+    spacing: dp(4)
+
+
+<_NavBtn>:
+    orientation: "vertical"
+    padding: dp(8), dp(5)
+    spacing: dp(2)
