@@ -26,6 +26,21 @@ class Game:
         self.tips = data.get("tips", [])
         self.variations = data.get("variations", [])
         self.quick_guide = data.get("quick_guide", [])
+        self.tutorial_youtube_id = data.get("tutorial_youtube_id", "")
+
+    @property
+    def tutorial_url(self):
+        """Link YouTube lengkap untuk video tutorial (kosong kalau tidak ada)."""
+        if not self.tutorial_youtube_id:
+            return ""
+        return f"https://youtu.be/{self.tutorial_youtube_id}"
+
+    @property
+    def tutorial_thumbnail_url(self):
+        """URL thumbnail video (dari CDN img.youtube.com, kosong kalau tidak ada video)."""
+        if not self.tutorial_youtube_id:
+            return ""
+        return f"https://img.youtube.com/vi/{self.tutorial_youtube_id}/hqdefault.jpg"
 
     def player_label(self):
         if self.players_min == self.players_max:

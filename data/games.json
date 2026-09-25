@@ -46,7 +46,8 @@
       "Serang musuh bergiliran.",
       "Gunakan efek suit secara taktis.",
       "Kalahkan seluruh musuh untuk menang."
-    ]
+    ],
+    "tutorial_youtube_id": "gfVkRaT9ZkY"
   },
   {
     "id": "blackjack",
@@ -93,7 +94,8 @@
       "Hindari melebihi 21.",
       "Dealer menyelesaikan tangannya.",
       "Bandingkan total untuk menentukan pemenang."
-    ]
+    ],
+    "tutorial_youtube_id": "xjqTIzYkGdI"
   },
   {
     "id": "baccarat",
@@ -139,7 +141,8 @@
       "Terapkan aturan kartu ketiga bila perlu.",
       "Bandingkan total mendekati 9.",
       "Menangkan taruhan sesuai hasil."
-    ]
+    ],
+    "tutorial_youtube_id": "gUbBEnDrPiU"
   },
   {
     "id": "war",
@@ -185,7 +188,8 @@
       "Nilai tertinggi menang kedua kartu.",
       "Jika seri, lakukan War.",
       "Pemain dengan seluruh kartu menang."
-    ]
+    ],
+    "tutorial_youtube_id": "z2K6uMX_g-U"
   },
   {
     "id": "texas_holdem",
@@ -240,7 +244,8 @@
       "Buka Flop, Turn, dan River bertahap.",
       "Lakukan taruhan tiap tahap.",
       "Bandingkan tangan terbaik saat Showdown."
-    ]
+    ],
+    "tutorial_youtube_id": "CpSewSHZhmo"
   },
   {
     "id": "omaha",
@@ -294,7 +299,8 @@
       "Buka kartu komunitas seperti Hold'em.",
       "Gunakan tepat dua kartu hole.",
       "Tentukan pemenang saat Showdown."
-    ]
+    ],
+    "tutorial_youtube_id": "ouAa2a-ZO9s"
   },
   {
     "id": "five_card_draw",
@@ -348,7 +354,8 @@
       "Tukar kartu yang tidak diinginkan.",
       "Lakukan ronde taruhan kedua.",
       "Bandingkan kombinasi saat Showdown."
-    ]
+    ],
+    "tutorial_youtube_id": "jVS3OZIIjzY"
   },
   {
     "id": "seven_card_stud",
@@ -402,7 +409,8 @@
       "Bagikan kartu tertutup terakhir.",
       "Lakukan taruhan akhir.",
       "Bandingkan tujuh kartu saat Showdown."
-    ]
+    ],
+    "tutorial_youtube_id": "omc8et-AgJ0"
   },
   {
     "id": "hearts",
@@ -448,7 +456,8 @@
       "Mulai dengan pemegang 2 of Clubs.",
       "Ikuti suit dan hindari kartu berbahaya.",
       "Hitung skor terendah sebagai pemenang."
-    ]
+    ],
+    "tutorial_youtube_id": "Z1yXlfSaFGA"
   },
   {
     "id": "spades",
@@ -494,7 +503,8 @@
       "Mainkan trik dengan Spade sebagai trump.",
       "Ikuti suit yang dipimpin.",
       "Hitung skor tim berdasarkan bid."
-    ]
+    ],
+    "tutorial_youtube_id": "mgCz2d9v8II"
   },
   {
     "id": "bridge",
@@ -540,7 +550,8 @@
       "Buka kartu dummy.",
       "Mainkan trik sesuai kontrak.",
       "Hitung skor berdasarkan pemenuhan kontrak."
-    ]
+    ],
+    "tutorial_youtube_id": "GQlZdKM8lT0"
   },
   {
     "id": "whist",
@@ -586,7 +597,8 @@
       "Ikuti suit yang dipimpin.",
       "Menangkan trik dengan kartu tertinggi.",
       "Hitung total trik tim di akhir ronde."
-    ]
+    ],
+    "tutorial_youtube_id": "RTXtzTqvFbs"
   },
   {
     "id": "euchre",
@@ -633,7 +645,8 @@
       "Ikuti suit dan mainkan trump strategis.",
       "Menangkan tiga dari lima trik.",
       "Hitung skor tim tiap ronde."
-    ]
+    ],
+    "tutorial_youtube_id": "THsv0HxK6bo"
   },
   {
     "id": "oh_hell",
@@ -679,7 +692,8 @@
       "Umumkan bid tiap pemain.",
       "Mainkan trik sesuai suit dan trump.",
       "Hitung poin berdasarkan ketepatan bid."
-    ]
+    ],
+    "tutorial_youtube_id": "LFDlzkcBeVM"
   },
   {
     "id": "rummy",
@@ -723,7 +737,8 @@
       "Susun set atau run yang sah.",
       "Buang satu kartu tiap giliran.",
       "Menang saat tangan kosong lebih dulu."
-    ]
+    ],
+    "tutorial_youtube_id": "M_9aW1ZGgS4"
   },
   {
     "id": "gin_rummy",
@@ -767,7 +782,8 @@
       "Susun set atau run.",
       "Knock saat deadwood cukup rendah.",
       "Hitung selisih poin deadwood."
-    ]
+    ],
+    "tutorial_youtube_id": "Uy063oI9Gkk"
   },
   {
     "id": "canasta",
@@ -814,7 +830,8 @@
       "Susun meld menuju canasta tujuh kartu.",
       "Selesaikan minimal satu canasta.",
       "Hitung skor akhir tim."
-    ]
+    ],
+    "tutorial_youtube_id": "VhF0xnaee3Y"
   },
   {
     "id": "indian_rummy",
@@ -860,7 +877,8 @@
       "Susun pure sequence lebih dulu.",
       "Lengkapi sequence dan set lain.",
       "Deklarasikan saat seluruh kartu tersusun."
-    ]
+    ],
+    "tutorial_youtube_id": "OfuxHKmeT7c"
   },
   {
     "id": "crazy_eights",
@@ -905,7 +923,8 @@
       "Mainkan kartu sesuai suit atau angka.",
       "Gunakan kartu 8 untuk mengubah suit.",
       "Menang saat tangan kosong lebih dulu."
-    ]
+    ],
+    "tutorial_youtube_id": "wG2OrdsOtCA"
   },
   {
     "id": "president",
@@ -952,7 +971,8 @@
       "Naikkan nilai kartu tiap giliran.",
       "Pass jika tidak bisa melanjutkan.",
       "Pemain pertama habis kartu jadi President."
-    ]
+    ],
+    "tutorial_youtube_id": "XGYv8UN_r1A"
   },
   {
     "id": "mau_mau",
@@ -999,7 +1019,8 @@
       "Gunakan kartu aksi 7, 8, dan Jack.",
       "Ucapkan 'Mau' saat kartu tersisa satu.",
       "Menang saat tangan kosong lebih dulu."
-    ]
+    ],
+    "tutorial_youtube_id": "0hRWihv-T4Y"
   },
   {
     "id": "klondike",
@@ -1043,7 +1064,8 @@
       "Susun tableau turun berselang warna.",
       "Ambil kartu dari stock saat buntu.",
       "Selesaikan seluruh foundation untuk menang."
-    ]
+    ],
+    "tutorial_youtube_id": "0aX1JfkAuQA"
   },
   {
     "id": "spider",
@@ -1087,7 +1109,8 @@
       "Susun urutan lengkap satu suit.",
       "Hapus urutan lengkap dari tableau.",
       "Selesaikan seluruh kartu untuk menang."
-    ]
+    ],
+    "tutorial_youtube_id": "pZVH6EfYHhI"
   },
   {
     "id": "freecell",
@@ -1130,7 +1153,8 @@
       "Susun tableau turun berselang warna.",
       "Pindahkan kartu ke foundation.",
       "Selesaikan seluruh foundation untuk menang."
-    ]
+    ],
+    "tutorial_youtube_id": "IboYFmYouNQ"
   },
   {
     "id": "pyramid",
@@ -1176,7 +1200,8 @@
       "Pasangkan dan hapus kartu tersebut.",
       "Ambil kartu baru dari stock bila buntu.",
       "Hapus seluruh piramida untuk menang."
-    ]
+    ],
+    "tutorial_youtube_id": "PZBFxNFlMCQ"
   },
   {
     "id": "golf",
@@ -1219,7 +1244,8 @@
       "Ambil kartu baru saat buntu.",
       "Lanjutkan hingga tableau kosong.",
       "Hitung sisa kartu sebagai skor."
-    ]
+    ],
+    "tutorial_youtube_id": "fWtegs8y5cw"
   },
   {
     "id": "yukon",
@@ -1262,7 +1288,8 @@
       "Susun turun berselang warna.",
       "Pindahkan kartu ke foundation.",
       "Selesaikan seluruh foundation untuk menang."
-    ]
+    ],
+    "tutorial_youtube_id": "R-jMHutJJrw"
   },
   {
     "id": "memory_match",
@@ -1305,7 +1332,8 @@
       "Ambil pasangan yang cocok.",
       "Tutup kembali bila tidak cocok.",
       "Hitung pasangan terbanyak di akhir."
-    ]
+    ],
+    "tutorial_youtube_id": "492bM_dhdR4"
   },
   {
     "id": "concentration",
@@ -1348,7 +1376,8 @@
       "Ambil pasangan yang cocok.",
       "Lanjutkan giliran bila berhasil.",
       "Hitung pasangan terbanyak sebagai pemenang."
-    ]
+    ],
+    "tutorial_youtube_id": "pkKzzaR4Yb4"
   },
   {
     "id": "spoons",
@@ -1391,7 +1420,8 @@
       "Ambil dan buang kartu secara cepat.",
       "Ambil sendok saat dapat empat kartu sama.",
       "Pemain tanpa sendok tersingkir."
-    ]
+    ],
+    "tutorial_youtube_id": "9w2bv9wPVqU"
   },
   {
     "id": "kemps",
@@ -1434,7 +1464,8 @@
       "Tukar kartu secara bersamaan tiap ronde.",
       "Beri sinyal rahasia saat dapat empat sama.",
       "Pasangan berteriak Kemps untuk menang."
-    ]
+    ],
+    "tutorial_youtube_id": "5uoWu8G4pII"
   },
   {
     "id": "egyptian_ratscrew",
@@ -1482,7 +1513,8 @@
       "Terapkan aturan kartu wajah dan As.",
       "Tepuk tumpukan saat pola muncul.",
       "Kumpulkan seluruh kartu untuk menang."
-    ]
+    ],
+    "tutorial_youtube_id": "tooWl4g6H48"
   },
   {
     "id": "old_maid",
@@ -1527,7 +1559,8 @@
       "Buang pasangan kartu yang cocok.",
       "Ambil kartu acak dari pemain sebelah.",
       "Pemain tanpa Old Maid di akhir menang."
-    ]
+    ],
+    "tutorial_youtube_id": "mk7usoIG20k"
   },
   {
     "id": "go_fish",
@@ -1570,6 +1603,7 @@
       "Ambil dari kolam bila tidak diberi.",
       "Kumpulkan set empat kartu sama.",
       "Set terbanyak di akhir menang."
-    ]
+    ],
+    "tutorial_youtube_id": "q968_7-Pg38"
   }
 ]

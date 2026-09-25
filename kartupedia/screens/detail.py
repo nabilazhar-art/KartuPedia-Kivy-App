@@ -6,6 +6,7 @@ from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.label import Label
 from kivy.uix.behaviors import ButtonBehavior
 from kivy.app import App
+from kivy.clock import Clock
 from kivy.graphics import Color, RoundedRectangle
 from kivy.uix.scrollview import ScrollView
 
@@ -17,6 +18,7 @@ from kartupedia.widgets.icons import VectorIcon
 from kartupedia.widgets.buttons import AppIconButton, FavoriteButton
 from kartupedia.widgets.common import SectionHeader, DifficultyBadge, MetadataItem
 from kartupedia.widgets.detail_parts import QuickGuideStep, SpecialCardTile, RankingCard
+from kartupedia.widgets.tutorial_video_card import TutorialVideoCard
 
 class GameDetailScreen(Screen):
     def __init__(self, **kwargs):
@@ -42,6 +44,16 @@ class GameDetailScreen(Screen):
         self.fav_wrap = BoxLayout(size_hint=(None, 1), width=dp(40))
         self.header.add_widget(self.fav_wrap)
         root.add_widget(self.header)
+
+        # Blok info (kategori, judul, deskripsi, metadata) -- LOCKED, tidak ikut
+        # scroll. Ini persis bagian "di atas garis" pada permintaan fitur video.
+        self.info_block = BoxLayout(
+            orientation="vertical", size_hint_y=None,
+            padding=(AppSpacing.LG, 0, AppSpacing.LG, AppSpacing.MD),
+            spacing=AppSpacing.XS,
+        )
+        self.info_block.bind(minimum_height=self.info_block.setter("height"))
+        root.add_widget(self.info_block)
 
         self.scroll = ScrollView(size_hint=(1, 1))
         self.content = BoxLayout(orientation="vertical", size_hint_y=None,
@@ -91,17 +103,18 @@ class GameDetailScreen(Screen):
         )
         self.fav_wrap.add_widget(fav_btn)
 
-        self.content.clear_widgets()
+        # --- Blok locked: kategori, judul, deskripsi, metadata ---
+        self.info_block.clear_widgets()
 
         cat_lbl = self._label(game.category.upper(), color=AppColors.GOLD, size=AppTypography.META, bold=True)
         cat_lbl.height = dp(18)
-        self.content.add_widget(cat_lbl)
+        self.info_block.add_widget(cat_lbl)
 
         name_lbl = self._label(game.name, color=AppColors.TEXT, size=AppTypography.HERO, bold=True)
-        self.content.add_widget(name_lbl)
+        self.info_block.add_widget(name_lbl)
 
         desc_lbl = self._label(game.description, color=AppColors.TEXT_SECONDARY, size=AppTypography.BODY)
-        self.content.add_widget(desc_lbl)
+        self.info_block.add_widget(desc_lbl)
 
         meta_row = BoxLayout(size_hint_y=None, height=dp(50), spacing=AppSpacing.LG)
         meta_row.add_widget(MetadataItem(label="Pemain", value=game.player_label()))
@@ -112,7 +125,13 @@ class GameDetailScreen(Screen):
         diff_col.add_widget(diff_badge_wrap)
         diff_col.add_widget(self._label("Difficulty", color=AppColors.TEXT_MUTED, size=AppTypography.META, height=dp(16)))
         meta_row.add_widget(diff_col)
-        self.content.add_widget(meta_row)
+        self.info_block.add_widget(meta_row)
+
+        # --- Blok scrollable: video tutorial (kalau ada) lalu section lainnya ---
+        self.content.clear_widgets()
+
+        if game.tutorial_url:
+            self.content.add_widget(TutorialVideoCard(game))
 
         if game.about:
             self.content.add_widget(self._section_block("Tentang", self._label(game.about, color=AppColors.TEXT_SECONDARY)))
@@ -159,3 +178,9 @@ class GameDetailScreen(Screen):
             for i, step in enumerate(game.quick_guide, start=1):
                 qg_wrap.add_widget(QuickGuideStep(i, step))
             self.content.add_widget(self._section_block("Panduan Cepat", qg_wrap))
+
+        # Selalu mulai dari atas saat membuka game (baru atau berbeda dari
+        # sebelumnya), bukan meneruskan posisi scroll game yang dibuka
+        # sebelumnya. Ditunda 1 frame (schedule_once) supaya scroll_y benar-benar
+        # diterapkan setelah Kivy selesai menghitung ulang tinggi konten.
+        Clock.schedule_once(lambda dt: setattr(self.scroll, "scroll_y", 1), 0)

@@ -22,7 +22,7 @@ class SplashScreen(Screen):
         Animation(opacity=1, duration=0.35).start(self.ids.logo_wrap)
         Animation(opacity=1, duration=0.35).start(self.ids.title_label)
         Animation(opacity=1, duration=0.35).start(self.ids.subtitle_label)
-        Clock.schedule_once(self._go_home, 7.0)
+        Clock.schedule_once(self._go_home, 5.0)
 
     def _go_home(self, dt):
         app = App.get_running_app()

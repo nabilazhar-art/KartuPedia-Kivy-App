@@ -3,7 +3,7 @@ from kivy.metrics import dp
 from kivy.factory import Factory
 from kivy.uix.floatlayout import FloatLayout
 from kivy.clock import Clock
-from kivy.graphics import Color, Line, Ellipse
+from kivy.graphics import Color, Line, Ellipse, Mesh
 
 from kartupedia.core.theme import AppColors
 
@@ -67,6 +67,13 @@ class VectorIcon(FloatLayout):
             elif self.name == "cards":
                 Line(rounded_rectangle=(cx-r*.95, cy-r*.72, r*1.25, r*1.48, dp(3)), width=self.stroke)
                 Line(rounded_rectangle=(cx-r*.22, cy-r*.96, r*1.25, r*1.48, dp(3)), width=self.stroke)
+            elif self.name == "play":
+                # Segitiga play menghadap kanan, solid (bukan outline), pakai Mesh.
+                p1 = (cx - r * .55, cy + r * .85)
+                p2 = (cx - r * .55, cy - r * .85)
+                p3 = (cx + r * .95, cy)
+                verts = [p1[0], p1[1], 0, 0, p2[0], p2[1], 0, 0, p3[0], p3[1], 0, 0]
+                Mesh(vertices=verts, indices=[0, 1, 2], mode="triangle_fan")
             else:
                 Line(circle=(cx, cy, r), width=self.stroke)
 
