@@ -50,8 +50,8 @@ class TutorialVideoCard(ButtonBehavior, BoxLayout, RoundedBG):
 
         thumb = AsyncImage(
             source=game.tutorial_thumbnail_url,
-            allow_stretch=True, keep_ratio=True,
-            size_hint=(1, 1),
+            fit_mode="contain",
+            size_hint=(1, 1), pos_hint={"x": 0, "y": 0},
         )
         thumb_wrap.add_widget(thumb)
 
