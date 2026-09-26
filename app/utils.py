@@ -1,5 +1,9 @@
-"""Fungsi utilitas: bucket durasi/pemain dan filter daftar game."""
-from kartupedia.core.models import Game
+"""Fungsi utilitas: bucket durasi/pemain dan filter daftar game.
+
+Dipindah dari versi Kivy (kartupedia/core/utils.py) tanpa perubahan -- murni
+Python, tidak pernah bergantung pada Kivy.
+"""
+from app.models import Game
 
 
 def duration_bucket(minutes: int) -> str:

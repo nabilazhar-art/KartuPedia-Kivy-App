@@ -1,8 +1,8 @@
 """Database permainan: memuat data/games.json menjadi objek Game."""
 import json
 
-from kartupedia.config import GAMES_FILE
-from kartupedia.core.models import Game
+from app.config import GAMES_FILE
+from app.models import Game
 
 
 def load_game_data(path=GAMES_FILE):

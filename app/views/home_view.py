@@ -1,0 +1,87 @@
+"""Konten layar Beranda: unggulan, promo Finder, kategori, baru dilihat, populer."""
+import flet as ft
+
+from app.database import GAME_OBJECTS, CATEGORIES, get_game_by_id
+from app.theme import get_palette, AppSpacing, AppTypography, AppRadius
+from app.components.game_card import featured_game_card, game_list_tile
+from app.components.finder_promo_card import finder_promo_card
+from app.components.section_header import section_header
+
+# Game unggulan tetap (bukan acak), supaya tampilan tidak berubah tiap render
+# (mis. tiap kali tema di-toggle). Bisa disempurnakan nanti jadi rotasi harian.
+_FEATURED_ID = "regicide"
+
+
+async def build_home_view(storage, mode: str, on_open_game, on_open_finder,
+                           on_open_category, on_see_all_popular) -> ft.Control:
+    c = get_palette(mode)
+
+    recent_ids = await storage.get_recently_viewed()
+    recent_games = [g for g in (get_game_by_id(i) for i in recent_ids) if g]
+
+    featured = get_game_by_id(_FEATURED_ID) or GAME_OBJECTS[0]
+    popular = GAME_OBJECTS[:8]
+
+    sections = [
+        ft.Container(height=AppSpacing.XS),
+        ft.Text("REKOMENDASI HARI INI", size=AppTypography.META,
+                 weight=ft.FontWeight.BOLD, color=c.GOLD),
+        featured_game_card(featured, mode, on_tap=lambda e: on_open_game(featured.id)),
+
+        ft.Container(height=AppSpacing.SM),
+        finder_promo_card(mode, on_tap=lambda e: on_open_finder()),
+
+        ft.Container(height=AppSpacing.SM),
+        section_header("Kategori", mode),
+        ft.Row(
+            scroll=ft.ScrollMode.AUTO,
+            spacing=AppSpacing.XS,
+            controls=[
+                ft.Container(
+                    on_click=lambda e, cat=cat: on_open_category(cat),
+                    ink=True,
+                    bgcolor=c.ELEVATED,
+                    border=ft.Border.all(1, c.BORDER),
+                    border_radius=AppRadius.PILL,
+                    padding=ft.Padding.symmetric(horizontal=AppSpacing.MD, vertical=AppSpacing.XS),
+                    content=ft.Text(cat, size=AppTypography.CAPTION, color=c.TEXT,
+                                      weight=ft.FontWeight.BOLD),
+                )
+                for cat in CATEGORIES
+            ],
+        ),
+    ]
+
+    if recent_games:
+        sections += [
+            ft.Container(height=AppSpacing.SM),
+            section_header("Baru Dilihat", mode),
+            ft.Column(
+                spacing=AppSpacing.XS,
+                controls=[
+                    game_list_tile(g, mode, on_tap=lambda e, gid=g.id: on_open_game(gid))
+                    for g in recent_games
+                ],
+            ),
+        ]
+
+    sections += [
+        ft.Container(height=AppSpacing.SM),
+        section_header("Populer", mode, action_text="Lihat Semua",
+                        on_action=lambda e: on_see_all_popular()),
+        ft.Column(
+            spacing=AppSpacing.XS,
+            controls=[
+                game_list_tile(g, mode, on_tap=lambda e, gid=g.id: on_open_game(gid))
+                for g in popular
+            ],
+        ),
+        ft.Container(height=AppSpacing.XXL),
+    ]
+
+    return ft.Column(
+        scroll=ft.ScrollMode.AUTO,
+        expand=True,
+        spacing=AppSpacing.XS,
+        controls=sections,
+    )

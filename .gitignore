@@ -1,21 +1,28 @@
-# Python
+# ==== Python ====
 __pycache__/
-*.pyc
-*.pyo
-venv/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+
+# ==== Virtual environment ====
 .venv/
+venv/
+env/
 
-# Data pengguna (favorit & baru dilihat) - jangan ikut ter-commit
-kartupedia_data.json
+# ==== Flet build output ====
+build/
+storage/
+.flet/
 
-# Buildozer / Android build
-.buildozer/
-bin/
-*.apk
-*.aab
-
-# Editor / OS
+# ==== IDE / editor ====
 .vscode/
 .idea/
+*.swp
+
+# ==== OS junk ====
 .DS_Store
 Thumbs.db
+
+# ==== Env / secrets (kalau ada nanti) ====
+.env

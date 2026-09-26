@@ -1,4 +1,8 @@
-"""Model data: representasi satu permainan kartu."""
+"""Model data: representasi satu permainan kartu.
+
+Dipindah dari versi Kivy (kartupedia/core/models.py) tanpa perubahan berarti --
+class ini murni Python, tidak pernah bergantung pada Kivy.
+"""
 
 
 class Game:
@@ -30,10 +34,17 @@ class Game:
 
     @property
     def tutorial_url(self):
-        """Link YouTube lengkap untuk video tutorial (kosong kalau tidak ada)."""
+        """Link YouTube biasa (dipakai fallback / tombol "buka di YouTube")."""
         if not self.tutorial_youtube_id:
             return ""
         return f"https://youtu.be/{self.tutorial_youtube_id}"
+
+    @property
+    def tutorial_embed_url(self):
+        """Link embed YouTube untuk diputar di WebView dalam aplikasi."""
+        if not self.tutorial_youtube_id:
+            return ""
+        return f"https://www.youtube.com/embed/{self.tutorial_youtube_id}?autoplay=1&playsinline=1"
 
     @property
     def tutorial_thumbnail_url(self):
