@@ -6,6 +6,7 @@ from app.theme import get_palette, AppSpacing, AppTypography, AppRadius
 from app.components.game_card import featured_game_card, game_list_tile
 from app.components.finder_promo_card import finder_promo_card
 from app.components.section_header import section_header
+from app.async_utils import async_handler
 
 # Game unggulan tetap (bukan acak), supaya tampilan tidak berubah tiap render
 # (mis. tiap kali tema di-toggle). Bisa disempurnakan nanti jadi rotasi harian.
@@ -26,10 +27,10 @@ async def build_home_view(storage, mode: str, on_open_game, on_open_finder,
         ft.Container(height=AppSpacing.XS),
         ft.Text("REKOMENDASI HARI INI", size=AppTypography.META,
                  weight=ft.FontWeight.BOLD, color=c.GOLD),
-        featured_game_card(featured, mode, on_tap=lambda e: on_open_game(featured.id)),
+        featured_game_card(featured, mode, on_tap=async_handler(on_open_game, featured.id)),
 
         ft.Container(height=AppSpacing.SM),
-        finder_promo_card(mode, on_tap=lambda e: on_open_finder()),
+        finder_promo_card(mode, on_tap=async_handler(on_open_finder)),
 
         ft.Container(height=AppSpacing.SM),
         section_header("Kategori", mode),
@@ -38,7 +39,7 @@ async def build_home_view(storage, mode: str, on_open_game, on_open_finder,
             spacing=AppSpacing.XS,
             controls=[
                 ft.Container(
-                    on_click=lambda e, cat=cat: on_open_category(cat),
+                    on_click=async_handler(on_open_category, cat),
                     ink=True,
                     bgcolor=c.ELEVATED,
                     border=ft.Border.all(1, c.BORDER),
@@ -59,7 +60,7 @@ async def build_home_view(storage, mode: str, on_open_game, on_open_finder,
             ft.Column(
                 spacing=AppSpacing.XS,
                 controls=[
-                    game_list_tile(g, mode, on_tap=lambda e, gid=g.id: on_open_game(gid))
+                    game_list_tile(g, mode, on_tap=async_handler(on_open_game, g.id))
                     for g in recent_games
                 ],
             ),
@@ -68,11 +69,11 @@ async def build_home_view(storage, mode: str, on_open_game, on_open_finder,
     sections += [
         ft.Container(height=AppSpacing.SM),
         section_header("Populer", mode, action_text="Lihat Semua",
-                        on_action=lambda e: on_see_all_popular()),
+                        on_action=async_handler(on_see_all_popular)),
         ft.Column(
             spacing=AppSpacing.XS,
             controls=[
-                game_list_tile(g, mode, on_tap=lambda e, gid=g.id: on_open_game(gid))
+                game_list_tile(g, mode, on_tap=async_handler(on_open_game, g.id))
                 for g in popular
             ],
         ),

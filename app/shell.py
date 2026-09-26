@@ -5,15 +5,20 @@ page.navigation_bar & page.appbar dipasang SEKALI di level page (bukan per
 ft.View) -- ini pola resmi Flet untuk navigasi tab yang persisten. Rute "/"
 di page.views hanya berisi wadah konten (content_area) yang isinya ditukar
 saat pindah tab. Layar "tarik turun" sungguhan (Detail Game, Game Finder,
-dst, yang butuh tombol back) memakai page.views.append(...) terpisah di
-batch-batch berikutnya -- untuk sekarang ditampilkan sbg placeholder supaya
-seluruh interaksi di Home tetap bisa dicoba dari sekarang.
+dst -- belum dibangun sampai Batch F4/F5) masih memakai placeholder yang
+punya tombol back berfungsi, supaya semua interaksi tetap bisa dicoba.
 """
 import flet as ft
 
 from app.config import APP_NAME
+from app.database import GAME_OBJECTS
 from app.theme import get_palette, AppSpacing, AppTypography
+from app.utils import filter_games
 from app.views.home_view import build_home_view
+from app.views.explore_view import build_explore_shell, build_chip_row, build_results_list
+from app.views.filter_screen import FilterScreen
+from app.views.favorite_view import build_favorite_view
+from app.views.about_view import build_about_view
 
 TABS = ["home", "explore", "favorite", "about"]
 TAB_TITLES = {"home": APP_NAME, "explore": "Jelajah", "favorite": "Favorit", "about": "Tentang"}
@@ -27,6 +32,16 @@ class AppShell:
         self.storage = storage
         self.tab = "home"
         self.content_area = ft.Container(expand=True)
+
+        # State Jelajah (bertahan selama app hidup, sama seperti Screen instance
+        # di versi Kivy yang menyimpan state-nya sendiri).
+        self.explore_query = ""
+        self.explore_category = None
+        self.explore_filters = {"players": set(), "duration": set(), "difficulty": set(), "category": set()}
+        # Dua wadah ini di-reuse (bukan dibangun ulang) supaya search field
+        # tidak kehilangan fokus tiap kali user mengetik satu huruf.
+        self.explore_results_container = ft.Container(expand=True)
+        self.explore_chip_container = ft.Container()
 
     def mode(self) -> str:
         return "dark" if self.page.theme_mode == ft.ThemeMode.DARK else "light"
@@ -77,7 +92,6 @@ class AppShell:
         self.page.update()
 
     async def _build_tab_content(self) -> ft.Control:
-        c = get_palette(self.mode())
         if self.tab == "home":
             return await build_home_view(
                 self.storage, self.mode(),
@@ -86,17 +100,19 @@ class AppShell:
                 on_open_category=self.open_category,
                 on_see_all_popular=self.see_all_popular,
             )
-        # Explore/Favorit/Tentang sungguhan menyusul di Batch F3.
-        return ft.Container(
-            expand=True,
-            alignment=ft.Alignment.CENTER,
-            content=ft.Text(
-                f'Tab "{TAB_TITLES[self.tab]}" menyusul di Batch F3.',
-                color=c.TEXT_MUTED, size=AppTypography.BODY, text_align=ft.TextAlign.CENTER,
-            ),
-        )
+        if self.tab == "explore":
+            return self._build_explore_content()
+        if self.tab == "favorite":
+            return await build_favorite_view(
+                self.storage, self.mode(),
+                on_open_game=self.open_game,
+                on_go_explore=self.see_all_popular,
+            )
+        if self.tab == "about":
+            return build_about_view(self.mode())
+        return ft.Container()  # tidak akan tercapai; TABS sudah mencakup semua
 
-    # ---------- Aksi ----------
+    # ---------- Aksi umum ----------
 
     async def toggle_theme(self, e=None):
         new_mode = "light" if self.mode() == "dark" else "dark"
@@ -110,12 +126,80 @@ class AppShell:
         await self._render_chrome()
         await self._render_tab()
 
-    async def see_all_popular(self):
+    async def see_all_popular(self, e=None):
         self.tab = "explore"
         await self._render_chrome()
         await self._render_tab()
 
-    # ---------- Navigasi ke layar lain (placeholder utk sementara) ----------
+    # ---------- Jelajah: search & filter ----------
+
+    def _build_explore_content(self) -> ft.Control:
+        self._refresh_explore_chips()
+        self._refresh_explore_results()
+        return build_explore_shell(
+            self.mode(), self.explore_query,
+            results_container=self.explore_results_container,
+            chip_container=self.explore_chip_container,
+            on_search_change=self._on_search_change,
+            on_open_filter=self.open_filter,
+        )
+
+    def _refresh_explore_chips(self):
+        self.explore_chip_container.content = build_chip_row(
+            self.mode(), self.explore_category, self._toggle_category
+        )
+
+    def _refresh_explore_results(self):
+        categories = set(self.explore_filters.get("category", set()))
+        if self.explore_category:
+            categories.add(self.explore_category)
+        results = filter_games(
+            GAME_OBJECTS, query=self.explore_query,
+            categories=categories or None,
+            player_buckets=self.explore_filters.get("players") or None,
+            duration_buckets=self.explore_filters.get("duration") or None,
+            difficulties=self.explore_filters.get("difficulty") or None,
+        )
+        self.explore_results_container.content = build_results_list(
+            results, self.mode(), on_open_game=self.open_game
+        )
+
+    async def _on_search_change(self, e):
+        # Hanya perbarui wadah hasil, TIDAK memanggil _render_tab() -- kalau
+        # seluruh tab dibangun ulang (termasuk search field-nya), search field
+        # akan kehilangan fokus keyboard tiap kali user mengetik satu huruf.
+        self.explore_query = e.control.value
+        self._refresh_explore_results()
+        self.page.update()
+
+    def _toggle_category(self, category: str):
+        self.explore_category = None if self.explore_category == category else category
+        self._refresh_explore_chips()
+        self._refresh_explore_results()
+        self.page.update()
+
+    async def open_category(self, category: str):
+        """Dipanggil dari chip kategori di Beranda -> pindah ke tab Jelajah
+        dgn kategori itu langsung aktif."""
+        self.tab = "explore"
+        self.explore_category = category
+        await self._render_chrome()
+        await self._render_tab()
+
+    async def open_filter(self):
+        def handle_apply(selected: dict):
+            self.explore_filters = selected
+            self._refresh_explore_results()
+            self.page.update()
+
+        def handle_close():
+            self._pop_view(None)
+
+        screen = FilterScreen(self.page, self.mode(), self.explore_filters, handle_apply, handle_close)
+        self.page.views.append(screen.build_view())
+        self.page.update()
+
+    # ---------- Navigasi ke layar lain (placeholder utk yang belum dibangun) ----------
 
     async def _push_placeholder(self, title: str):
         c = get_palette(self.mode())
@@ -152,9 +236,6 @@ class AppShell:
 
     async def open_finder(self):
         await self._push_placeholder("Game Finder")
-
-    async def open_category(self, category: str):
-        await self._push_placeholder(f"Jelajah - {category}")
 
     async def _handle_view_pop(self, e):
         if len(self.page.views) > 1:
